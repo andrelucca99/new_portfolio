@@ -45,7 +45,6 @@ const LinkNav = styled(NavLink)`
     color: ${({ theme }) => theme.textColor.segundary};
     border-bottom: 1px solid ${({ theme }) => theme.textColor.segundary};
   }
-
 `;
 
 const Logo = styled.figure`
