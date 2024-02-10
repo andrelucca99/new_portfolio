@@ -83,7 +83,8 @@ function Home() {
                 image={ item.imagem }
                 title={ item.title }
                 tech={ item.tech }
-                links={ item.links }
+                repositorio={ item.repositorio }
+                link={ item.link }
               />
             ))}
         </SectionProjects>

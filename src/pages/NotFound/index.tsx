@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { Helmet } from 'react-helmet';
 import notFound from '../../assets/images/notfound.png';
 
 function NotFound() {
@@ -53,6 +54,7 @@ function NotFound() {
 
   return (
     <BackgroundStyle>
+      <Helmet title="Page - Not Found" />
       <img src={ notFound } alt="" />
       <h1>Oops! Página não encontrada</h1>
       <h2>Desculpe, a página que você está procurando não existe.</h2>

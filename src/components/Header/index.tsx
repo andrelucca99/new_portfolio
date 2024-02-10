@@ -5,6 +5,9 @@ import Icones from '../Icones';
 import { devices } from '../../Theme';
 import logo from '../../assets/images/logo.svg';
 
+import IconGitHub from '../../assets/icones/icon-github.svg';
+import IconLinkedin from '../../assets/icones/icon-linkedin.svg';
+
 const HeaderStyled = styled.header`
   width: 100%;
   max-width: 1140px;
@@ -69,7 +72,12 @@ function Header() {
         <LinkNav to="/sobre">Sobre</LinkNav>
         <LinkNav to="/projetos">Projetos</LinkNav>
         <LinkNav to="/blog">Blog</LinkNav>
-        <Icones />
+        <Icones
+          icon1={ IconLinkedin }
+          icon2={ IconGitHub }
+          link1="https://www.linkedin.com/feed/"
+          link2="https://github.com/andrelucca99"
+        />
       </Nav>
     </HeaderStyled>
   );

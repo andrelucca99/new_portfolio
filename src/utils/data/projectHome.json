@@ -4,27 +4,31 @@
     "imagem": "https://github.com/andrelucca99/jornada-milhas/raw/main/src/assets/imagens/jornada-milhas.png",
     "title": "Jornada Milhas",
     "tech": ["Angular / ", "TypeScript"],
-    "links": "https://github.com/andrelucca99/jornada-milhas"
+    "repositorio": "https://github.com/andrelucca99/jornada-milhas",
+    "link": "https://project-buzzfeed.vercel.app/"
   },
   {
     "id": 2,
     "imagem": "https://github.com/andrelucca99/memoteca/raw/main/src/assets/imagens/tela-app.gif",
     "title": "Memoteca",
     "tech": ["Angular / ", "TypeScript"],
-    "links": "https://github.com/andrelucca99/memoteca"
+    "repositorio": "https://github.com/andrelucca99/memoteca",
+    "link": ""
   },
   {
     "id": 3,
     "imagem": "https://github.com/andrelucca99/star-wars-planets/raw/main/banner.gif",
     "title": "Star Wars Planets Search",
     "tech": ["React / ", "JavaScript"],
-    "links": "https://github.com/andrelucca99/star-wars-planets"
+    "repositorio": "https://github.com/andrelucca99/star-wars-planets",
+    "link": ""
   },
   {
     "id": 4,
     "imagem": "https://github.com/andrelucca99/jornada-milhas/raw/main/src/assets/imagens/jornada-milhas.png",
     "title": "Jornada Milhas",
     "tech": ["Angular / ", "TypeScript"],
-    "links": "https://github.com/andrelucca99/jornada-milhas"
+    "repositorio": "https://github.com/andrelucca99/jornada-milhas",
+    "link": ""
   }
 ]

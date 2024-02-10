@@ -1,24 +1,23 @@
-/* eslint-disable react/jsx-max-depth */
-import { Link } from 'react-router-dom';
-
 import styled from 'styled-components';
 
-import IconeGitHub from './assets/github.png';
+import Icones from '../Icones';
 import IconeOpen from './assets/open.png';
+import IconeGitHub from './assets/github.png';
 
 interface CardProps {
   image: string,
   title: string,
   tech: string[],
-  links: string,
+  repositorio: string,
+  link: string,
 }
 
-function Card({ image, title, tech, links }: CardProps) {
+function Card({ image, title, tech, repositorio, link }: CardProps) {
   const CardContainer = styled.div`
     width: 400px;
-    background-color: #001634;
     color: #fff;
     border-radius: 12px;
+    background-color: #001634;
     font-family: ${({ theme }) => theme.fonts.primary};
     & h1 {
       font-size: ${({ theme }) => theme.size.md};
@@ -41,24 +40,15 @@ function Card({ image, title, tech, links }: CardProps) {
   `;
 
   const CardContentDetails = styled.div`
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    width: 100%;
 
     & div > span {
       font-size: ${({ theme }) => theme.size.xs};
       font-weight: ${({ theme }) => theme.weight.regular};
-    }
-  `;
-
-  const Icones = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    & :hover {
-      margin-top: -2px;
     }
   `;
 
@@ -69,26 +59,15 @@ function Card({ image, title, tech, links }: CardProps) {
         <h1>{ title }</h1>
         <CardContentDetails>
           <div>
-            {/* <span>HTML5 / </span>
-            <span>CSS3</span> */}
             <span>{ tech }</span>
           </div>
-          <Icones>
-            {/* <Link to="https://github.com/andrelucca99" target="_blank">
-              <img src={ IconeGitHub } alt="Ícone do github" />
-            </Link>
-            <Link to="https://github.com/andrelucca99" target="_blank">
-              <img src={ IconeOpen } alt="Ícone do github" />
-            </Link> */}
 
-            <Link to={ links } target="_blank">
-              <img src={ IconeGitHub } alt="Ícone do github" />
-            </Link>
-
-            <Link to={ links } target="_blank">
-              <img src={ IconeOpen } alt="Ícone do github" />
-            </Link>
-          </Icones>
+          <Icones
+            icon1={ IconeGitHub }
+            icon2={ IconeOpen }
+            link1={ repositorio }
+            link2={ link }
+          />
         </CardContentDetails>
       </CardContent>
     </CardContainer>

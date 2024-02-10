@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import Icones from '../Icones';
 
+import IconGitHub from '../../assets/icones/icon-github.svg';
+import IconLinkedin from '../../assets/icones/icon-linkedin.svg';
+
 const FooterStyled = styled.footer`
   width: 100%;
   display: flex;
@@ -30,7 +33,12 @@ function Footer() {
   return (
     <FooterStyled>
       <TextSpanStyled>Desenvolvido por André Lucas</TextSpanStyled>
-      <Icones />
+      <Icones
+        icon1={ IconLinkedin }
+        icon2={ IconGitHub }
+        link1="https://www.linkedin.com/feed/"
+        link2="https://github.com/andrelucca99"
+      />
     </FooterStyled>
   );
 }
