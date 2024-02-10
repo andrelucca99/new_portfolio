@@ -1,23 +1,26 @@
 export const theme = {
-  bgColor: '#F7F2E8',
+  bgColor: '#040736',
+  bgFooter: '#04244F',
+  bgCardTech: '#EBEBEB',
   textColor: {
-    primary: '#3C0E0E',
-    segundary: '#4D1D1D',
+    primary: '#fff',
+    segundary: '#7B78E5',
   },
   fonts: {
-    primary: 'Poppins',
+    primary: 'Inter',
+    segundary: 'Inria Sans',
   },
   size: {
     // font-size: xs, extra-small
-    xs: '14px',
+    xs: '15px',
     // font-size: sm, small
-    sm: '16px',
+    sm: '18px',
     // font-size: md, medium
     md: '20px',
     // font-size: lg, large
-    lg: '24px',
+    lg: '25px',
     // font-size: xl, extra-large
-    xl: '80px',
+    xl: '32px',
   },
   weight: {
     regular: 400,
@@ -28,11 +31,22 @@ export const theme = {
   // Breakpoints - responsivo
 
   breakpoints: {
-    values: {
-      xs: '320px',
-      sm: '768px',
-      md: '1024',
-      lg: '1191px',
-    },
+    mobileS: '320px',
+    mobileM: '375px',
+    mobileL: '425px',
+    tablet: '768px',
+    laptop: '1024px',
+    laptopL: '1440px',
+    desktop: '2560px',
   },
+};
+
+export const devices = {
+  mobileS: `(min-width: ${theme.breakpoints.mobileS})`,
+  mobileM: `(min-width: ${theme.breakpoints.mobileM})`,
+  mobileL: `(min-width: ${theme.breakpoints.mobileL})`,
+  tablet: `(min-width: ${theme.breakpoints.tablet})`,
+  laptop: `(min-width: ${theme.breakpoints.laptop})`,
+  laptopL: `(min-width: ${theme.breakpoints.laptopL})`,
+  desktop: `(min-width: ${theme.breakpoints.desktop})`,
 };
