@@ -1,19 +1,19 @@
 [
   {
     "id": 1,
-    "imagem": "https://github.com/andrelucca99/jornada-milhas/raw/main/src/assets/imagens/jornada-milhas.png",
-    "title": "Jornada Milhas",
+    "imagem": "https://github.com/andrelucca99/angular-blog/raw/master/src/assets/view.gif",
+    "title": "The Blog",
     "tech": ["Angular / ", "TypeScript"],
-    "repositorio": "https://github.com/andrelucca99/jornada-milhas",
-    "link": "https://project-buzzfeed.vercel.app/"
+    "repositorio": "https://github.com/andrelucca99/angular-blog",
+    "link": "https://angular-blog-umber.vercel.app/"
   },
   {
     "id": 2,
-    "imagem": "https://github.com/andrelucca99/memoteca/raw/main/src/assets/imagens/tela-app.gif",
-    "title": "Memoteca",
-    "tech": ["Angular / ", "TypeScript"],
-    "repositorio": "https://github.com/andrelucca99/memoteca",
-    "link": ""
+    "imagem": "https://github.com/andrelucca99/react-typescript-material-ui/raw/master/src/app.gif",
+    "title": "Alura Book",
+    "tech": ["Html / ", "css"],
+    "repositorio": "https://github.com/andrelucca99/AluraBooks",
+    "link": "https://andrelucca99.github.io/AluraBooks/"
   },
   {
     "id": 3,
@@ -21,14 +21,14 @@
     "title": "Star Wars Planets Search",
     "tech": ["React / ", "JavaScript"],
     "repositorio": "https://github.com/andrelucca99/star-wars-planets",
-    "link": ""
+    "link": "https://star-wars-planets-three.vercel.app/"
   },
   {
     "id": 4,
-    "imagem": "https://github.com/andrelucca99/jornada-milhas/raw/main/src/assets/imagens/jornada-milhas.png",
-    "title": "Jornada Milhas",
+    "imagem": "https://github.com/andrelucca99/indexa/raw/master/src/assets/view.gif",
+    "title": "Indexa",
     "tech": ["Angular / ", "TypeScript"],
-    "repositorio": "https://github.com/andrelucca99/jornada-milhas",
-    "link": ""
+    "repositorio": "https://github.com/andrelucca99/indexa",
+    "link": "https://indexa-nine.vercel.app/"
   }
 ]

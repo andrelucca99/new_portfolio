@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import { Link } from 'react-router-dom';
 import Icones from '../Icones';
 import IconeOpen from './assets/open.png';
 import IconeGitHub from './assets/github.png';
@@ -52,9 +53,19 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
     }
   `;
 
+  const LinkImage = styled(Link)`
+    & :hover{
+      transform: scale(0.9);
+      border-radius: 20px;
+      border: 2px solid #060231;
+    }
+  `;
+
   return (
     <CardContainer>
-      <CardImage src={ image } alt="" />
+      <LinkImage to={ link } target="_blank">
+        <CardImage src={ image } alt="" />
+      </LinkImage>
       <CardContent>
         <h1>{ title }</h1>
         <CardContentDetails>
