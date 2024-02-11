@@ -75,6 +75,7 @@ const SectionAcademic = styled.section`
   flex-wrap: wrap;
   gap: 10px;
   justify-content: space-around;
+  margin: 50px 0;
 `;
 
 const AcademicCard = styled.section`
@@ -104,10 +105,9 @@ const AcademicCard = styled.section`
 `;
 
 const Row = styled.hr`
-  max-width: 90%;
+  max-width: 100%;
   margin: auto;
   border: 1.5px solid ${({ theme }) => theme.bgFooter};
-  margin-top: 20px;
 `;
 
 function About() {
@@ -127,31 +127,23 @@ function About() {
           <SectionContent>
             <TextSubTitulo text="Sobre Mim" />
             <Paragraph>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Expedita, fugit? Voluptates itaque at laborum vitae delectus
-              nobis hic, modi quibusdam nesciunt est quia doloremque dolorum
-              assumenda aspernatur voluptatum et omnis?
-              Quasi ea iusto atque aut, dolores illo numquam iure voluptates,
-              suscipit, harum doloremque maiores at! Fuga sed eveniet impedit
-              officiis nesciunt consequatur corporis, cupiditate maxime earum
-              repudiandae neque excepturi hic?
+              Olá, sou André Lucas, um entusiasta do desenvolvimento web em
+              busca contínua de soluções inovadoras para desafios do cotidiano,
+              visando impactar positivamente a vida das pessoas através
+              da acessibilidade e da tecnologia.
             </Paragraph>
-            <Row />
-          </SectionContent>
-
-          <SectionContent>
-            <TextSubTitulo text="Tecnologias" />
-            <TechSkillsStyled>
-              {techSkills
-              && techSkills.map((item) => (
-                <CardTech
-                  key={ item.linguagem }
-                  image={ item.image }
-                  title={ item.linguagem }
-                />
-              ))}
-            </TechSkillsStyled>
-            <Row />
+            <Paragraph>
+              Tenho experiência sólida em diversas tecnologias, com foco
+              principal em Front-end: HTML5, CSS3, JavaScript, Angular,
+              React, RTL (React Testing Library), Jest, Redux, TypeScript
+              e Node.js. Além disso, possuo também conhecimento em Back-end:
+              bancos de dados SQL e NoSQL, Express, APIs REST, JWT, ORM,
+              POO, SOLID, Python e Docker.
+            </Paragraph>
+            <Paragraph>
+              Sou apaixonado por aprender e compartilhar conhecimento,
+              sempre aberto a novas conexões e oportunidades de crescimento mútuo.
+            </Paragraph>
           </SectionContent>
 
           <SectionContent>
@@ -173,11 +165,23 @@ function About() {
                 ))
               }
             </SectionAcademic>
+            <Row />
           </SectionContent>
 
           <SectionContent>
-            <TextSubTitulo text="Experiências" />
+            <TextSubTitulo text="Tecnologias" />
+            <TechSkillsStyled>
+              {techSkills
+              && techSkills.map((item) => (
+                <CardTech
+                  key={ item.linguagem }
+                  image={ item.image }
+                  title={ item.linguagem }
+                />
+              ))}
+            </TechSkillsStyled>
           </SectionContent>
+
         </AboutContent>
       </main>
     </>
