@@ -30,6 +30,11 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
     min-width: 100%;
     height: 250px;
     border-radius: 10px 10px 0 0;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 80%;
+    }
   `;
 
   const CardContent = styled.div`
