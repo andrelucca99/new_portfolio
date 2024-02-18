@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { BannerProps } from '../../utils/types';
 
 const BannerStyled = styled.section`
-  width: 100%;
+  width: 80%;
   height: 300px;
 
   border-radius: 20px;
@@ -16,7 +16,7 @@ const BannerStyled = styled.section`
 
 const TitleStyled = styled.h1`
   max-width: 350px;
-  text-align: left;
+  text-align: center;
 
   font-family: ${({ theme }) => theme.fonts.segundary};
   font-size: ${({ theme }) => theme.size.xl};
@@ -24,8 +24,6 @@ const TitleStyled = styled.h1`
   color: ${({ theme }) => theme.textColor.primary};
 
   position: absolute;
-  left: 120px;
-
   z-index: 1;
 `;
 
