@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
 
 import Banner from '../../components/Banner';
 import fotoBanner from '../../assets/images/Banner.svg';
