@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Icones from '../Icones';
 import IconeOpen from './assets/open.png';
 import IconeGitHub from './assets/github.png';
+import { devices } from '../../Theme';
 
 interface CardProps {
   image: string,
@@ -28,12 +29,17 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
 
   const CardImage = styled.img`
     min-width: 100%;
-    height: 250px;
+    height: 150px;
     border-radius: 10px 10px 0 0;
     transition: all 0.2s ease-out;
 
     &:hover {
       opacity: 80%;
+    }
+
+    @media ${devices.laptop} {
+      flex-direction: row;
+      height: 250px;
     }
   `;
 

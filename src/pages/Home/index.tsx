@@ -17,22 +17,23 @@ const HomeStyled = styled.section`
   align-items: center;
   justify-content: start;
   gap: 55px;
-  /* background-color: #ffd900; */
   padding: 55px 0; 
 `;
 
 const SectionPrincipal = styled.section`
   width: 100%;
   min-width: 80%;
-  /* background-color: #1eff00c5; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 5px;
   margin-bottom: 20px;
 
   @media ${devices.laptop} {
     flex-direction: row;
+    align-items: flex-start;
   }
 `;
 
@@ -45,22 +46,33 @@ const SectionBanner = styled.section`
 `;
 
 const SectionProjects = styled.section`
-  width: 100%;
-  max-width: 60%;
-  /* background-color: #0004ff; */
+  width: 80%;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
+
+  @media ${devices.tablet} {
+    width: 60%;
+  }
 `;
 
 const SectionArticles = styled.article`
-  width: 100%;
-  max-width: 20%;
+  height: 100vh;
+  width: 80%;
   border: 1px solid #5a4aee;
   border-radius: 5px;
   text-align: center;
+
+  @media ${devices.tablet} {
+    width: 80%;
+  }
+
+  @media ${devices.laptop} {
+    width: 20%;
+  }
 `;
 
 function Home() {
