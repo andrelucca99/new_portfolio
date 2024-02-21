@@ -22,7 +22,7 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
     background-color: #001634;
     font-family: ${({ theme }) => theme.fonts.primary};
     & h1 {
-      font-size: ${({ theme }) => theme.size.md};
+      font-size: ${({ theme }) => theme.size.sm};
       font-weight: ${({ theme }) => theme.weight.medium};
     }
   `;
@@ -38,7 +38,6 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
     }
 
     @media ${devices.laptop} {
-      flex-direction: row;
       height: 250px;
     }
   `;
@@ -56,12 +55,13 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
 
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 1px;
 
     & div > span {
       font-size: ${({ theme }) => theme.size.xs};
       font-weight: ${({ theme }) => theme.weight.regular};
     }
+
   `;
 
   const LinkImage = styled(Link)`

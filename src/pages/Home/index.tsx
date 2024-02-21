@@ -10,30 +10,34 @@ import { devices } from '../../Theme';
 import Button from '../../components/Button';
 
 const HomeStyled = styled.section`
-  width: 100%;
+  max-width: 80%;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  gap: 55px;
-  padding: 55px 0; 
+
+  @media ${devices.laptop} {
+    justify-content: center;
+    gap: 55px;
+    padding: 55px 0;
+  }
 `;
 
 const SectionPrincipal = styled.section`
   width: 100%;
-  min-width: 80%;
+
+  background-color: yellow;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 5px;
-  margin-bottom: 20px;
 
-  @media ${devices.laptop} {
+  @media ${devices.tablet} {
     flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 20px;
   }
 `;
 
@@ -42,35 +46,37 @@ const SectionBanner = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
 `;
 
 const SectionProjects = styled.section`
-  width: 80%;
+  width: 100%;
+
+  background-color: red;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
 
   @media ${devices.tablet} {
     width: 60%;
+    flex-flow: row wrap;
   }
 `;
 
 const SectionArticles = styled.article`
-  height: 100vh;
   width: 80%;
   border: 1px solid #5a4aee;
   border-radius: 5px;
   text-align: center;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media ${devices.tablet} {
-    width: 80%;
-  }
-
-  @media ${devices.laptop} {
     width: 20%;
   }
 `;
@@ -103,7 +109,7 @@ function Home() {
           <Button text="Mais Projetos" url="/projetos" />
         </SectionProjects>
         <SectionArticles>
-          artigos
+          Em Breve
           <Button text="Veja Mais" url="/blog" />
         </SectionArticles>
       </SectionPrincipal>
