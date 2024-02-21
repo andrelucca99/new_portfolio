@@ -11,15 +11,15 @@ export const theme = {
     segundary: 'Inria Sans',
   },
   size: {
-    // font-size: xs, extra-small
+    // xs: extra-small
     xs: '15px',
-    // font-size: sm, small
+    // sm: small
     sm: '18px',
-    // font-size: md, medium
+    // md: medium
     md: '20px',
-    // font-size: lg, large
+    // lg: large
     lg: '25px',
-    // font-size: xl, extra-large
+    // xl: extra-large
     xl: '32px',
   },
   weight: {
@@ -27,26 +27,17 @@ export const theme = {
     medium: 600,
     bold: 700,
   },
-
-  // Breakpoints - responsivo
-
   breakpoints: {
-    mobileS: '320px',
-    mobileM: '375px',
-    mobileL: '425px',
-    tablet: '768px',
+    mobile: '375px',
+    tablet: '800px',
     laptop: '1024px',
-    laptopL: '1440px',
-    desktop: '2560px',
+    desktop: '2048px',
   },
 };
 
 export const devices = {
-  mobileS: `(min-width: ${theme.breakpoints.mobileS})`,
-  mobileM: `(min-width: ${theme.breakpoints.mobileM})`,
-  mobileL: `(min-width: ${theme.breakpoints.mobileL})`,
+  mobileS: `(min-width: ${theme.breakpoints.mobile})`,
   tablet: `(min-width: ${theme.breakpoints.tablet})`,
   laptop: `(min-width: ${theme.breakpoints.laptop})`,
-  laptopL: `(min-width: ${theme.breakpoints.laptopL})`,
   desktop: `(min-width: ${theme.breakpoints.desktop})`,
 };
