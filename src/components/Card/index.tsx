@@ -16,7 +16,7 @@ interface CardProps {
 
 function Card({ image, title, tech, repositorio, link }: CardProps) {
   const CardContainer = styled.div`
-    width: 400px;
+    width: 300px;
     color: #fff;
     border-radius: 12px;
     background-color: #001634;
@@ -29,7 +29,7 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
 
   const CardImage = styled.img`
     min-width: 100%;
-    height: 150px;
+    height: 100%;
     border-radius: 10px 10px 0 0;
     transition: all 0.2s ease-out;
 
@@ -38,7 +38,7 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
     }
 
     @media ${devices.laptop} {
-      height: 250px;
+      height: 200px;
     }
   `;
 
