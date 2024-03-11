@@ -8,6 +8,7 @@ import Card from '../../components/Card';
 import project from '../../utils/data/projectHome.json';
 import { devices } from '../../Theme';
 import Button from '../../components/Button';
+import TextSubTitulo from '../../components/Title';
 
 const HomeStyled = styled.section`
   max-width: 80%;
@@ -26,7 +27,7 @@ const HomeStyled = styled.section`
 const SectionPrincipal = styled.section`
   width: 100%;
 
-  background-color: yellow;
+  /* background-color: yellow; */
 
   display: flex;
   flex-direction: column;
@@ -50,14 +51,17 @@ const SectionBanner = styled.section`
 
 const SectionProjects = styled.section`
   width: 100%;
-
-  background-color: red;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+
+  & div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 
   @media ${devices.tablet} {
     width: 60%;
@@ -66,18 +70,24 @@ const SectionProjects = styled.section`
 `;
 
 const SectionArticles = styled.article`
-  width: 80%;
-  border: 1px solid #5a4aee;
-  border-radius: 5px;
-  text-align: center;
   padding: 10px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 
   @media ${devices.tablet} {
     width: 20%;
+  }
+
+  & div {
+    width: 212px;
+    height: 158px;
+
+    border: 1px solid #5a4aee;
+    border-radius: 5px;
+    text-align: center;
   }
 `;
 
@@ -95,7 +105,9 @@ function Home() {
 
       <SectionPrincipal>
         <SectionProjects>
-          {project
+          <TextSubTitulo text="Projetos" />
+          <div>
+            {project
             && project.map((item) => (
               <Card
                 key={ item.id }
@@ -106,10 +118,15 @@ function Home() {
                 link={ item.link }
               />
             ))}
+          </div>
           <Button text="Mais Projetos" url="/projetos" />
         </SectionProjects>
         <SectionArticles>
-          Em Breve
+          <TextSubTitulo text="Artigos" />
+          <p>Em Breve</p>
+          <div>
+            <img src="../../assets/images/paper.jpg" alt="" />
+          </div>
           <Button text="Veja Mais" url="/blog" />
         </SectionArticles>
       </SectionPrincipal>

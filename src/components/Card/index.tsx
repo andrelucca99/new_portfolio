@@ -25,10 +25,14 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
       font-size: ${({ theme }) => theme.size.sm};
       font-weight: ${({ theme }) => theme.weight.medium};
     }
+
+    @media ${devices.desktop} {
+      width: 400px;
+    }
   `;
 
   const CardImage = styled.img`
-    min-width: 100%;
+    width: 100%;
     height: 100%;
     border-radius: 10px 10px 0 0;
     transition: all 0.2s ease-out;
@@ -40,21 +44,31 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
     @media ${devices.laptop} {
       height: 200px;
     }
+
+    @media ${devices.desktop} {
+      height: 250px;
+    }
   `;
 
   const CardContent = styled.div`
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     padding: 10px 20px;
+
+    & h1 {
+      width: 100%;
+    }
   `;
 
   const CardContentDetails = styled.div`
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 1px;
 
     & div > span {
