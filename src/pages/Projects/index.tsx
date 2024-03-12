@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Banner from '../../components/Banner';
 
 import foto from '../../assets/images/Banner.svg';
-import TextSubTitulo from '../../components/Title';
 import Card from '../../components/Card';
 
 import project from './utils/data/projects.json';
