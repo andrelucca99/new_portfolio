@@ -6,6 +6,15 @@ import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
 import { cardAcademic, techSkills } from './utils/mock';
 
+const MainContainer = styled.main`
+  width: 80%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`;
+
 const HeaderContainer = styled.section`
   width: 100%;
 
@@ -42,17 +51,18 @@ const AboutContent = styled.section`
   align-items: center;
 `;
 
-const Paragraph = styled.p`
-  text-align: left;
-  font-size: ${({ theme }) => theme.size.sm};
-  margin-bottom: 20px;
-`;
-
 const SectionContent = styled.section`
     width: 80%;
     text-align: center;
     font-weight: ${({ theme }) => theme.weight.regular};
     margin-bottom: 20px;
+`;
+
+const Paragraph = styled.p`
+  text-align: left;
+  font-size: ${({ theme }) => theme.size.md};
+  font-family: ${({ theme }) => theme.fonts.segundary};
+  margin-bottom: 20px;
 `;
 
 const TechSkillsStyled = styled.section`
@@ -114,7 +124,7 @@ function About() {
   return (
     <>
       <Helmet title="Portfolio - Sobre" />
-      <main>
+      <MainContainer>
         <HeaderContainer>
           <PerfilPhoto src={ Photo } alt="Foto de perfil do André" />
           <Title>André Lucas</Title>
@@ -183,7 +193,7 @@ function About() {
           </SectionContent>
 
         </AboutContent>
-      </main>
+      </MainContainer>
     </>
   );
 }
