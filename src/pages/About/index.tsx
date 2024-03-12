@@ -129,7 +129,7 @@ function About() {
           <PerfilPhoto src={ Photo } alt="Foto de perfil do André" />
           <Title>André Lucas</Title>
           <SubTitle>
-            Desenvolvedor Front-end
+            Desenvolvedor Full Stack
             <Row />
           </SubTitle>
         </HeaderContainer>

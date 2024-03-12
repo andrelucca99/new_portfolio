@@ -141,7 +141,7 @@ function Home() {
           <span>Seja bem vindos ao meu portfólio</span>
           <h2>Olá, eu sou André Lucas</h2>
           <p>
-            Desenvolvedor Full Stack Junior. Sou apaixonado por
+            Como desenvolvedor, sou apaixonado por
             aprender e compartilhar conhecimento, sempre aberto a novas conexões.
           </p>
           <Button text="saiba mais" url="/sobre" />

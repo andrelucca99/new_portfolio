@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "imagem": "https://github.com/andrelucca99/react-typescript-material-ui/raw/master/src/app.gif",
+    "imagem": "https://github.com/alura-cursos/curso-react-alurabooks/raw/aula-5/screencapture.png",
     "title": "Alura Book",
     "tech": ["Html / ", "css"],
     "repositorio": "https://github.com/andrelucca99/AluraBooks",
@@ -33,34 +33,34 @@
   },
   {
     "id": 5,
-    "imagem": "https://github.com/andrelucca99/angular-blog/raw/master/src/assets/view.gif",
-    "title": "The Blog",
+    "imagem": "https://github.com/andrelucca99/project-buzzfeed/raw/master/src/assets/image/view.gif",
+    "title": "Buzzfeed",
     "tech": ["Angular / ", "TypeScript"],
-    "repositorio": "https://github.com/andrelucca99/angular-blog",
-    "link": "https://angular-blog-umber.vercel.app/"
+    "repositorio": "https://github.com/andrelucca99/project-buzzfeed",
+    "link": "https://project-buzzfeed.vercel.app/"
   },
   {
     "id": 6,
-    "imagem": "https://github.com/andrelucca99/react-typescript-material-ui/raw/master/src/app.gif",
-    "title": "Alura Book",
-    "tech": ["Html / ", "css"],
-    "repositorio": "https://github.com/andrelucca99/AluraBooks",
-    "link": "https://andrelucca99.github.io/AluraBooks/"
+    "imagem": "https://user-images.githubusercontent.com/84812552/233459737-46aa426a-7c0a-439c-8ebc-b0a6ca89ba01.png",
+    "title": "Pokedex",
+    "tech": ["Html / ", "css", "JavaScript"],
+    "repositorio": "https://github.com/andrelucca99/js-developer-pokedex",
+    "link": "https://js-developer-pokedex-snowy.vercel.app/"
   },
   {
     "id": 7,
-    "imagem": "https://github.com/andrelucca99/star-wars-planets/raw/main/banner.gif",
-    "title": "Star Wars Planets Search",
+    "imagem": "https://space-app-lime.vercel.app/imagens/galeria/foto-4.png",
+    "title": "Space App",
     "tech": ["React / ", "JavaScript"],
-    "repositorio": "https://github.com/andrelucca99/star-wars-planets",
-    "link": "https://star-wars-planets-three.vercel.app/"
+    "repositorio": "https://github.com/andrelucca99/space-app",
+    "link": "https://space-app-lime.vercel.app/"
   },
   {
     "id": 8,
-    "imagem": "https://github.com/andrelucca99/indexa/raw/master/src/assets/view.gif",
-    "title": "Indexa",
+    "imagem": "https://github.com/andrelucca99/jornada-milhas/raw/main/src/assets/imagens/jornada-milhas.png",
+    "title": "Jornada Milhas",
     "tech": ["Angular / ", "TypeScript"],
-    "repositorio": "https://github.com/andrelucca99/indexa",
-    "link": "https://indexa-nine.vercel.app/"
+    "repositorio": "https://github.com/andrelucca99/jornada-milhas",
+    "link": ""
   }
 ]
