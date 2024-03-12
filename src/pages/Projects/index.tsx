@@ -9,26 +9,27 @@ import project from './utils/data/projects.json';
 
 function Projects() {
   const ProjectContent = styled.section`
-    width: 100%;
+    width: 80%;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: left;
+    align-items: center;
 
-    /* background-color: red; */
     margin: 55px 0;
-    padding-left: 20px;
   `;
 
   const ProjectsCards = styled.section`
     width: 100%;
-    /* background-color: yellow; */
+
+    background-color: ${({ theme }) => theme.bgFooter};
+    border-radius: 10px;
+    border: 1px solid #5a4aee;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
 
     padding: 20px;
@@ -36,8 +37,6 @@ function Projects() {
 
   return (
     <ProjectContent>
-      <Banner text="Projetos" image={ foto } />
-      <TextSubTitulo text="Projetos" />
 
       <ProjectsCards>
         {project
@@ -53,7 +52,7 @@ function Projects() {
             ))}
       </ProjectsCards>
 
-      <Banner text="Projetos" image={ foto } />
+      <Banner text="Blog" image={ foto } />
     </ProjectContent>
   );
 }
