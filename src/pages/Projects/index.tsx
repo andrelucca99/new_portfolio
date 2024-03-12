@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 import Banner from '../../components/Banner';
 
 import foto from '../../assets/images/Banner.svg';
@@ -36,6 +37,7 @@ function Projects() {
 
   return (
     <ProjectContent>
+      <Helmet title="Portfolio - Projetos" />
 
       <ProjectsCards>
         {project
