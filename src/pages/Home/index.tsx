@@ -9,6 +9,9 @@ import project from '../../utils/data/projectHome.json';
 import { devices } from '../../Theme';
 import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
+import ImagePaper from '../../assets/images/paper.jpg';
+
+import Photo from '../../assets/images/foto.jpg';
 
 const HomeStyled = styled.section`
   max-width: 80%;
@@ -43,10 +46,35 @@ const SectionPrincipal = styled.section`
 `;
 
 const SectionBanner = styled.section`
-  width: 100%;
+  width: 80%;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 10px;
+
+  & div {
+    width: 50%;
+    font-family: ${({ theme }) => theme.fonts.segundary};
+    font-size: ${({ theme }) => theme.size.sm};
+    font-weight: ${({ theme }) => theme.weight.regular};
+    color: ${({ theme }) => theme.textColor.primary};
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  & div > h2 {
+    font-size: ${({ theme }) => theme.size.xl};
+    color: ${({ theme }) => theme.textColor.segundary};
+  }
+
+  @media ${devices.laptop} {
+    flex-direction: row;
+  }
 `;
 
 const SectionProjects = styled.section`
@@ -83,12 +111,24 @@ const SectionArticles = styled.article`
 
   & div {
     width: 212px;
-    height: 158px;
 
     border: 1px solid #5a4aee;
     border-radius: 5px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 5px;
   }
+`;
+
+const PerfilPhoto = styled.img`
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  margin-bottom: 20px;
 `;
 
 function Home() {
@@ -97,10 +137,16 @@ function Home() {
       <Helmet title="Portfolio - Home" />
 
       <SectionBanner>
-        <Banner
-          text="Olá, Sejam bem vindos ao meu portfólio"
-          image={ fotoBanner }
-        />
+        <div>
+          <span>Seja bem vindos ao meu portfólio</span>
+          <h2>Olá, eu sou André Lucas</h2>
+          <p>
+            Desenvolvedor Full Stack Junior. Sou apaixonado por
+            aprender e compartilhar conhecimento, sempre aberto a novas conexões.
+          </p>
+          <Button text="saiba mais" url="/sobre" />
+        </div>
+        <PerfilPhoto src={ Photo } alt="Foto de perfil do André" />
       </SectionBanner>
 
       <SectionPrincipal>
@@ -123,11 +169,13 @@ function Home() {
         </SectionProjects>
         <SectionArticles>
           <TextSubTitulo text="Artigos" />
-          <p>Em Breve</p>
           <div>
-            <img src="../../assets/images/paper.jpg" alt="" />
+            <p>Em Breve</p>
+            <img src={ ImagePaper } alt="" />
+            <img src={ ImagePaper } alt="" />
+            <img src={ ImagePaper } alt="" />
           </div>
-          <Button text="Veja Mais" url="/blog" />
+          {/* <Button text="Veja Mais" url="/blog" /> */}
         </SectionArticles>
       </SectionPrincipal>
 
