@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import Photo from './assets/foto.jpg';
 import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
+import PhotoPerfil from '../../components/PhotoPerfil';
 import { cardAcademic, techSkills } from './utils/mock';
 
 const MainContainer = styled.main`
@@ -23,13 +24,6 @@ const HeaderContainer = styled.section`
   justify-content: center;
   align-items: center;
   margin: 55px 0;
-`;
-
-const PerfilPhoto = styled.img`
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  margin-bottom: 20px;
 `;
 
 const Title = styled.h1`
@@ -126,7 +120,7 @@ function About() {
       <Helmet title="Portfolio - Sobre" />
       <MainContainer>
         <HeaderContainer>
-          <PerfilPhoto src={ Photo } alt="Foto de perfil do André" />
+          <PhotoPerfil image={ Photo } text="Foto de perfil do André" />
           <Title>André Lucas</Title>
           <SubTitle>
             Desenvolvedor Full Stack

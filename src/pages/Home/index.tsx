@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import Banner from '../../components/Banner';
-import fotoBanner from '../../assets/images/Banner.svg';
 import Card from '../../components/Card';
-
-import project from '../../utils/data/projectHome.json';
-import { devices } from '../../Theme';
+import Banner from '../../components/Banner';
 import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
-import ImagePaper from '../../assets/images/paper.jpg';
+import PhotoPerfil from '../../components/PhotoPerfil';
 
 import Photo from '../../assets/images/foto.jpg';
+import fotoBanner from '../../assets/images/Banner.svg';
+import ImagePaper from '../../assets/images/paper.jpg';
+
+import { devices } from '../../Theme';
+import project from '../../utils/data/projectHome.json';
 
 const HomeStyled = styled.section`
   max-width: 80%;
@@ -124,13 +125,6 @@ const SectionArticles = styled.article`
   }
 `;
 
-const PerfilPhoto = styled.img`
-  width: 250px;
-  height: 250px;
-  border-radius: 100%;
-  margin-bottom: 20px;
-`;
-
 function Home() {
   return (
     <HomeStyled>
@@ -146,7 +140,7 @@ function Home() {
           </p>
           <Button text="Saiba mais" url="/sobre" />
         </div>
-        <PerfilPhoto src={ Photo } alt="Foto de perfil do André" />
+        <PhotoPerfil image={ Photo } text="Foto de perfil do André" />
       </SectionBanner>
 
       <SectionPrincipal>
