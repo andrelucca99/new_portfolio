@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
-import Banner from '../../components/Banner';
 
-import foto from '../../assets/images/Banner.svg';
 import Card from '../../components/Card';
 
 import project from './utils/data/projects.json';
@@ -52,8 +50,6 @@ function Projects() {
               />
             ))}
       </ProjectsCards>
-
-      <Banner text="Blog" image={ foto } />
     </ProjectContent>
   );
 }

@@ -144,7 +144,7 @@ function Home() {
             Como desenvolvedor, sou apaixonado por
             aprender e compartilhar conhecimento, sempre aberto a novas conexões.
           </p>
-          <Button text="saiba mais" url="/sobre" />
+          <Button text="Saiba mais" url="/sobre" />
         </div>
         <PerfilPhoto src={ Photo } alt="Foto de perfil do André" />
       </SectionBanner>
@@ -179,10 +179,7 @@ function Home() {
         </SectionArticles>
       </SectionPrincipal>
 
-      <Banner
-        text="Blog"
-        image={ fotoBanner }
-      />
+      <Banner image={ fotoBanner } />
     </HomeStyled>
   );
 }
