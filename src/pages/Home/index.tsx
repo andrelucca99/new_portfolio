@@ -31,8 +31,6 @@ const HomeStyled = styled.section`
 const SectionPrincipal = styled.section`
   width: 100%;
 
-  /* background-color: yellow; */
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +130,7 @@ function Home() {
 
       <SectionBanner>
         <div>
-          <span>Seja bem vindos ao meu portfólio</span>
+          <span>Seja bem-vindos ao meu portfólio</span>
           <h2>Olá, eu sou André Lucas</h2>
           <p>
             Como desenvolvedor, sou apaixonado por

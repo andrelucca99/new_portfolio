@@ -36,7 +36,7 @@ export const theme = {
 };
 
 export const devices = {
-  mobileS: `(min-width: ${theme.breakpoints.mobile})`,
+  mobile: `(min-width: ${theme.breakpoints.mobile})`,
   tablet: `(min-width: ${theme.breakpoints.tablet})`,
   laptop: `(min-width: ${theme.breakpoints.laptop})`,
   desktop: `(min-width: ${theme.breakpoints.desktop})`,
