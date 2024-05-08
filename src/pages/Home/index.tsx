@@ -53,7 +53,6 @@ const SectionBanner = styled.section`
   padding: 10px;
 
   & div {
-    width: 50%;
     font-family: ${({ theme }) => theme.fonts.segundary};
     font-size: ${({ theme }) => theme.size.sm};
     font-weight: ${({ theme }) => theme.weight.regular};
@@ -64,6 +63,14 @@ const SectionBanner = styled.section`
     align-items: flex-start;
     justify-content: space-between;
     gap: 10px;
+
+    @media ${devices.mobile} {
+      width: 100%;
+    }
+
+    @media ${devices.laptop} {
+      width: 50%;
+    }
   }
 
   & div > h2 {

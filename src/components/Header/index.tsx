@@ -20,10 +20,12 @@ const HeaderStyled = styled.header`
   @media ${devices.mobile} {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 250px;
   }
 
   @media ${devices.tablet} {
     flex-direction: row;
+    margin-bottom: 0;
   }
 `;
 
@@ -70,7 +72,7 @@ const NavMobile = styled.nav`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: red;
+  padding-top: 10px;
 
   @media ${devices.tablet} {
     display: none;
