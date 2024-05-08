@@ -28,7 +28,7 @@ export const theme = {
     bold: 700,
   },
   breakpoints: {
-    mobile: '375px',
+    mobile: '300px',
     tablet: '800px',
     laptop: '1024px',
     desktop: '2048px',
