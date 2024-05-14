@@ -6,6 +6,7 @@ import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 import { cardAcademic, techSkills } from './utils/mock';
+import { devices } from '../../Theme';
 
 const MainContainer = styled.main`
   width: 80%;
@@ -50,6 +51,10 @@ const SectionContent = styled.section`
     text-align: center;
     font-weight: ${({ theme }) => theme.weight.regular};
     margin-bottom: 20px;
+
+    @media ${devices.mobile} {
+      width: 100%;
+    }
 `;
 
 const Paragraph = styled.p`
@@ -61,7 +66,6 @@ const Paragraph = styled.p`
 
 const TechSkillsStyled = styled.section`
   width: 100%;
-  max-width: 80%;
   margin: auto;
   padding: 20px;
 
@@ -105,7 +109,25 @@ const AcademicCard = styled.section`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @media ${devices.mobile} {
+      align-items: center;
+    }
+
+    @media ${devices.tablet} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
+
+  @media ${devices.mobile} {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media ${devices.tablet} {
+      flex-direction: row;
+    }
 `;
 
 const Row = styled.hr`

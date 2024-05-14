@@ -21,7 +21,6 @@ const CardContainer = styled.section`
 
   & span {
     color: ${({ theme }) => theme.textColor.segundary};
-    /* color: #000; */
     font-size: ${({ theme }) => theme.size.sm};
     font-weight: ${({ theme }) => theme.weight.medium};
   }
