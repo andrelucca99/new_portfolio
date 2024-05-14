@@ -61,6 +61,14 @@
     "title": "Jornada Milhas",
     "tech": ["Angular / ", "TypeScript"],
     "repositorio": "https://github.com/andrelucca99/jornada-milhas",
-    "link": ""
+    "link": "https://github.com/andrelucca99/jornada-milhas"
+  },
+  {
+    "id": 9,
+    "imagem": "https://github.com/andrelucca99/freelando/raw/main/public/assets/print.png",
+    "title": "Freelando",
+    "tech": ["React / ", "Emotion"],
+    "repositorio": "https://github.com/andrelucca99/freelando",
+    "link": "https://github.com/andrelucca99/freelando"
   }
 ]
