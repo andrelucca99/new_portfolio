@@ -6,6 +6,14 @@ import react from '../assets/react.png';
 import angular from '../assets/angular.png';
 import javascrit from '../assets/javascript.png';
 import typescrit from '../assets/typescript.png';
+import c_sharp from '../assets/c-sharp.png';
+import redux from '../assets/redux.png';
+import api from '../assets/api.png';
+import docker from '../assets/docker.png';
+import jwt from '../assets/jwt.png';
+import mongodb from '../assets/mongodb.png';
+import python from '../assets/python.png';
+import sql from '../assets/sql.png';
 import testingLibrary from '../assets/testing-library.png';
 
 import { ICardAcademic, ITechSkills } from './Interfaces';
@@ -28,6 +36,10 @@ export const techSkills: Array<ITechSkills> = [
     linguagem: 'React',
   },
   {
+    image: redux,
+    linguagem: 'Redux',
+  },
+  {
     image: angular,
     linguagem: 'Angular',
   },
@@ -46,6 +58,34 @@ export const techSkills: Array<ITechSkills> = [
   {
     image: node,
     linguagem: 'Node.js',
+  },
+  {
+    image: c_sharp,
+    linguagem: 'C#',
+  },
+  {
+    image: api,
+    linguagem: 'APIs',
+  },
+  {
+    image: docker,
+    linguagem: 'Docker',
+  },
+  {
+    image: jwt,
+    linguagem: 'JWT',
+  },
+  {
+    image: python,
+    linguagem: 'Python',
+  },
+  {
+    image: sql,
+    linguagem: 'SQL',
+  },
+  {
+    image: mongodb,
+    linguagem: 'Mondo DB',
   },
 ];
 
