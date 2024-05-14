@@ -11,6 +11,7 @@ const LinkProjects = styled(Link)`
   border: 1px solid ${({ theme }) => theme.textColor.segundary};
   border-radius: 5px;
   margin: 20px 0;
+  text-align: center;
 
   &:hover {
     cursor: pointer;

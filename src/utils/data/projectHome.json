@@ -9,11 +9,11 @@
   },
   {
     "id": 2,
-    "imagem": "https://github.com/alura-cursos/curso-react-alurabooks/raw/aula-5/screencapture.png",
-    "title": "Alura Book",
-    "tech": ["Html / ", "css"],
-    "repositorio": "https://github.com/andrelucca99/AluraBooks",
-    "link": "https://andrelucca99.github.io/AluraBooks/"
+    "imagem": "https://github.com/andrelucca99/freelando/raw/main/public/assets/print.png",
+    "title": "Freelando",
+    "tech": ["React / ", "Emotion"],
+    "repositorio": "https://github.com/andrelucca99/freelando",
+    "link": "https://github.com/andrelucca99/freelando"
   },
   {
     "id": 3,
