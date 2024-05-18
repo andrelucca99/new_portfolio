@@ -1,15 +1,17 @@
+/* eslint-disable max-lines */
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 import Card from '../../components/Card';
-import Banner from '../../components/Banner';
 import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
 import Photo from '../../assets/images/foto.jpg';
-import fotoBanner from '../../assets/images/Banner.svg';
 import ImagePaper from '../../assets/images/paper.jpg';
+import RodaLivre from './assets/app2.jpg';
+import FloraExpress from './assets/app1.jpg';
+import SaudeAgil from './assets/app3.jpg';
 
 import { devices } from '../../Theme';
 import project from '../../utils/data/projectHome.json';
@@ -26,6 +28,8 @@ const HomeStyled = styled.section`
     gap: 55px;
     padding: 55px 0;
   }
+
+  /* background-color: yellow; */
 `;
 
 const SectionPrincipal = styled.section`
@@ -130,6 +134,65 @@ const SectionArticles = styled.article`
   }
 `;
 
+const SectionUx = styled.section`
+  width: 80%;
+  /* background-color: red; */
+
+  text-align: center;
+`;
+
+const LayoutGridUx = styled.section`
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas:
+      "flora-express roda-livre roda-livre"
+      "flora-express saude-agil saude-agil";
+  }
+
+  .flora-express {
+    grid-area: flora-express;
+    background: url(${FloraExpress}) no-repeat;
+    background-position: center;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .roda-livre  {
+    grid-area: roda-livre;
+    background: url(${RodaLivre}) no-repeat;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .saude-agil {
+    grid-area: saude-agil;
+    background: url(${SaudeAgil}) no-repeat;
+    &:hover {
+      opacity: 0.8;
+      cursor: pointer;
+    }
+  }
+
+  .item {
+    border: 1px solid #5a4aee;
+    border-radius: 5px;
+  }
+
+  @media ${devices.mobile} {
+    /* grid-template-columns: 2fr 2fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas:
+      "flora-express roda-livre roda-livre"
+      "flora-express saude-agil saude-agil"; */
+  }
+`;
+
 function Home() {
   return (
     <HomeStyled>
@@ -178,7 +241,16 @@ function Home() {
         </SectionArticles>
       </SectionPrincipal>
 
-      <Banner image={ fotoBanner } />
+      <SectionUx>
+        <TextSubTitulo text="Projetos UX Design" />
+        <LayoutGridUx>
+          <div className="container">
+            <div className="item roda-livre" />
+            <div className="item flora-express" />
+            <div className="item saude-agil" />
+          </div>
+        </LayoutGridUx>
+      </SectionUx>
     </HomeStyled>
   );
 }
