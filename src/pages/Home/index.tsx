@@ -9,9 +9,9 @@ import PhotoPerfil from '../../components/PhotoPerfil';
 
 import Photo from '../../assets/images/foto.jpg';
 import ImagePaper from '../../assets/images/paper.jpg';
-import RodaLivre from './assets/app2.jpg';
-import FloraExpress from './assets/app1.jpg';
-import SaudeAgil from './assets/app3.jpg';
+import RodaLivre from './assets/roda-livre.svg';
+import FloraExpress from './assets/floraExpress.svg';
+import SaudeAgil from './assets/saude-agil.svg';
 
 import { devices } from '../../Theme';
 import project from '../../utils/data/projectHome.json';
@@ -28,8 +28,6 @@ const HomeStyled = styled.section`
     gap: 55px;
     padding: 55px 0;
   }
-
-  /* background-color: yellow; */
 `;
 
 const SectionPrincipal = styled.section`
@@ -136,60 +134,45 @@ const SectionArticles = styled.article`
 
 const SectionUx = styled.section`
   width: 80%;
-  /* background-color: red; */
-
   text-align: center;
 `;
 
 const LayoutGridUx = styled.section`
-  .container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:
-      "flora-express roda-livre roda-livre"
-      "flora-express saude-agil saude-agil";
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 
-  .flora-express {
-    grid-area: flora-express;
+  & .card-left {
+    width: 100%;
+    height: 405px;
     background: url(${FloraExpress}) no-repeat;
-    background-position: center;
-    &:hover {
-      opacity: 0.8;
-      cursor: pointer;
+    border-radius: 8px;
+  }
+
+  & .card-right {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+
+    & .roda-livre, .saude-agil {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+    }
+
+    & .roda-livre {
+      background: url(${RodaLivre}) no-repeat;
+    }
+
+    & .saude-agil {
+      background: url(${SaudeAgil}) no-repeat;
     }
   }
-
-  .roda-livre  {
-    grid-area: roda-livre;
-    background: url(${RodaLivre}) no-repeat;
-    &:hover {
-      opacity: 0.8;
-      cursor: pointer;
-    }
-  }
-
-  .saude-agil {
-    grid-area: saude-agil;
-    background: url(${SaudeAgil}) no-repeat;
-    &:hover {
-      opacity: 0.8;
-      cursor: pointer;
-    }
-  }
-
-  .item {
-    border: 1px solid #5a4aee;
-    border-radius: 5px;
-  }
-
-  @media ${devices.mobile} {
-    /* grid-template-columns: 2fr 2fr;
-    grid-template-rows: 200px 200px 200px;
-    grid-template-areas:
-      "flora-express roda-livre roda-livre"
-      "flora-express saude-agil saude-agil"; */
+  @media ${devices.laptop} {
+    flex-direction: row;
   }
 `;
 
@@ -244,10 +227,10 @@ function Home() {
       <SectionUx>
         <TextSubTitulo text="Projetos UX Design" />
         <LayoutGridUx>
-          <div className="container">
-            <div className="item roda-livre" />
-            <div className="item flora-express" />
-            <div className="item saude-agil" />
+          <div className="card-left" />
+          <div className="card-right">
+            <div className="roda-livre" />
+            <div className="saude-agil" />
           </div>
         </LayoutGridUx>
       </SectionUx>
