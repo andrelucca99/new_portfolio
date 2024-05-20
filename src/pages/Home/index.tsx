@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-max-depth */
 /* eslint-disable max-lines */
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
@@ -9,10 +10,10 @@ import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
 import Photo from '../../assets/images/foto.jpg';
+import RodaLivre from './assets/logo-rodaLivre.svg';
+import SaudeAgil from './assets/logo-saudeAgil.svg';
 import ImagePaper from '../../assets/images/paper.jpg';
-import RodaLivre from './assets/roda-livre.svg';
-import FloraExpress from './assets/floraExpress.svg';
-import SaudeAgil from './assets/saude-agil.svg';
+import FloraExpress from './assets/logo-floraExpress.svg';
 
 import { devices } from '../../Theme';
 import project from '../../utils/data/projectHome.json';
@@ -138,6 +139,7 @@ const SectionUx = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 const LayoutGridUx = styled.section`
@@ -149,14 +151,14 @@ const LayoutGridUx = styled.section`
   & .card-left {
     width: 100%;
     height: 405px;
-    background: url(${FloraExpress}) no-repeat;
-    background-size: cover;
+    background-color: #0E402D;
     border-radius: 8px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    gap: 5px;
   }
 
   & .card-right {
@@ -175,18 +177,15 @@ const LayoutGridUx = styled.section`
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
     }
 
     & .roda-livre {
-      background: url(${RodaLivre}) no-repeat;
-      background-size: cover;
+      background-color: #A55EEA;
     }
 
     & .saude-agil {
-      width: 100%;
-      background: url(${SaudeAgil}) no-repeat;
-      background-size: cover;
+      background-color: #265A99;
     }
   }
   @media ${devices.laptop} {
@@ -202,7 +201,7 @@ const LinkUx = styled(Link)`
 
   &:hover {
     background-color: #04254f6f;
-    padding: 5px 10px;
+    opacity: 0.5;
     border-radius: 8px;
     border-bottom: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
@@ -260,16 +259,25 @@ function Home() {
       <SectionUx>
         <TextSubTitulo text="Projetos UX Design" />
         <LayoutGridUx>
-          <div className="card-left">
-            <LinkUx to="/ux/flora-express" />
-          </div>
+          <LinkUx to="/ux/flora-express">
+            <div className="card-left">
+              <img src={ FloraExpress } alt="Logo do projeto Flora Express" />
+              <h3>Flora Express</h3>
+            </div>
+          </LinkUx>
           <div className="card-right">
-            <div className="roda-livre">
-              <LinkUx to="/ux/roda-livre" />
-            </div>
-            <div className="saude-agil">
-              <LinkUx to="/ux/saude-agil" />
-            </div>
+            <LinkUx to="/ux/roda-livre">
+              <div className="roda-livre">
+                <img src={ RodaLivre } alt="Logo do projeto Flora Express" />
+                <h3>Roda Livre</h3>
+              </div>
+            </LinkUx>
+            <LinkUx to="/ux/saude-agil">
+              <div className="saude-agil">
+                <img src={ SaudeAgil } alt="Logo do projeto Flora Express" />
+                <h3>Saúde Ágil</h3>
+              </div>
+            </LinkUx>
           </div>
         </LayoutGridUx>
       </SectionUx>
