@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
+import { Link } from 'react-router-dom';
 import Card from '../../components/Card';
 import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
@@ -134,19 +135,28 @@ const SectionArticles = styled.article`
 
 const SectionUx = styled.section`
   width: 80%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const LayoutGridUx = styled.section`
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 100%;
 
   & .card-left {
     width: 100%;
     height: 405px;
     background: url(${FloraExpress}) no-repeat;
+    background-size: cover;
     border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   & .card-right {
@@ -161,18 +171,41 @@ const LayoutGridUx = styled.section`
       width: 100%;
       height: 200px;
       border-radius: 8px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
     }
 
     & .roda-livre {
       background: url(${RodaLivre}) no-repeat;
+      background-size: cover;
     }
 
     & .saude-agil {
+      width: 100%;
       background: url(${SaudeAgil}) no-repeat;
+      background-size: cover;
     }
   }
   @media ${devices.laptop} {
     flex-direction: row;
+  }
+`;
+
+const LinkUx = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+
+  &:hover {
+    background-color: #04254f6f;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
   }
 `;
 
@@ -227,10 +260,16 @@ function Home() {
       <SectionUx>
         <TextSubTitulo text="Projetos UX Design" />
         <LayoutGridUx>
-          <div className="card-left" />
+          <div className="card-left">
+            <LinkUx to="/ux/flora-express" />
+          </div>
           <div className="card-right">
-            <div className="roda-livre" />
-            <div className="saude-agil" />
+            <div className="roda-livre">
+              <LinkUx to="/ux/roda-livre" />
+            </div>
+            <div className="saude-agil">
+              <LinkUx to="/ux/saude-agil" />
+            </div>
           </div>
         </LayoutGridUx>
       </SectionUx>

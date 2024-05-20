@@ -4,6 +4,9 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import Layout from './components/layout';
+import FloraExpress from './pages/UX/FloraExpress';
+import RodaLivre from './pages/UX/RodaLivre';
+import SaudeAgil from './pages/UX/SaudeAgil';
 
 function App() {
   return (
@@ -12,6 +15,9 @@ function App() {
         <Route index element={ <Home /> } />
         <Route path="sobre" element={ <About /> } />
         <Route path="projetos" element={ <Projects /> } />
+        <Route path="ux/flora-express" element={ <FloraExpress /> } />
+        <Route path="ux/roda-livre" element={ <RodaLivre /> } />
+        <Route path="ux/saude-agil" element={ <SaudeAgil /> } />
       </Route>
       <Route path="/*" element={ <NotFound /> } />
     </Routes>
