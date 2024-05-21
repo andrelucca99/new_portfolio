@@ -42,7 +42,7 @@
       {
         "objetivo": "Nosso serviço de aluguel de bicicletas oferece as famílias dessas cidades, uma maneira conveniente, acessível e sustentável de explorar a cidade. Com uma plataforma online fácil de usar, oferecemos uma variedade de bicicletas de qualidade para todas as idades, proporcionando não apenas mobilidade urbana, mas também experiências familiares memoráveis.",
         "funcoes": ["Pesquisador de Usuários", "Designer UX"],
-        "responsabilidades": ["Pequisa de usuários", "Wireframing", "Design e Prototipagem", "Condução de Entrevistas e Pesquisas"],
+        "responsabilidades": ["Pequisa de usuários", "Wireframing", "Prototipagem", "Processo de Design"],
         "publicoAlvo": "Famílias Urbanas, Famílias Urbanas e Turistas e Visitantes",
         "desafios": [
           "Infraestrutura Urbana Insuficiente: A falta de ciclovias e de infraestrutura adequada para bicicletas em algumas áreas da cidade pode dificultar a segurança e a conveniência para os usuários, desestimulando o uso do serviço.",
@@ -73,18 +73,41 @@
     ],
     "saudeAgil": [
       {
-        "objetivo": "",
+        "objetivo": "Saúde Ágil: É um aplicativo, que busca melhorar os atendimentos em UPAs do sistema de saúde. Fazendo os agendamentos / consultas pelo próprio app, retirada de exames entre outros.",
         "funcoes": ["Pesquisador de Usuários", "Designer UX"],
-        "responsabilidades": ["Pequisa de usuários", "Wireframing", "Design e Prototipagem", "Condução de Entrevistas e Pesquisas"],
-        "publicoAlvo": "",
-        "desafios": [],
+        "responsabilidades": ["Pequisa de usuários", "Wireframing", "Prototipagem", "Processo de Design"],
+        "publicoAlvo": "Trabalhadores com horários fixos, Famílias de baixa renda, Idosos e pessoas com mobilidade reduzida, Moradores de áreas rurais e periféricas e Pais e responsáveis",
+        "desafios": [
+          "Infraestrutura tecnológica: Implementar e manter sistemas de agendamento online robustos e acessíveis para todas as populações, incluindo aquelas em áreas com pouca conectividade à internet.",
+          "Capacidade de atendimento: Aumentar a capacidade de atendimento nas unidades de saúde para evitar longas esperas e garantir que as consultas sejam realizadas em tempo hábil.",
+          "Recursos humanos: Garantir que haja pessoal médico e administrativo suficiente e bem treinado para lidar com a demanda aumentada gerada pelo sistema de agendamento mais eficiente.",
+          "Acessibilidade e inclusão: Desenvolver soluções que sejam acessíveis para todos os usuários, incluindo idosos, pessoas com mobilidade reduzida e indivíduos com baixa alfabetização digital.",
+          "Sustentabilidade financeira: Assegurar que o projeto tenha financiamento adequado e contínuo para suportar a implementação e a manutenção das melhorias tecnológicas e operacionais necessárias.",
+          "Resistência à mudança: Lidar com a resistência potencial de funcionários e pacientes em adotar novos sistemas e processos, garantindo uma transição suave e o treinamento adequado para todos os envolvidos.",
+          "Privacidade e segurança de dados: Proteger as informações pessoais e médicas dos usuários contra violações de segurança e garantir a conformidade com as regulamentações de proteção de dados."
+        ],
         "desafiosDescricao": "",
-        "detalhes": "",
-        "conceitos": [],
-        "descricaoTeste": "",
-        "conclusao": "",
-        "proximasEtapas": [],
-        "descricaoEtapas": ""
+        "detalhes": "A pesquisa do usuário revelou que muitas pessoas enfrentam dificuldades para agendar consultas médicas devido a longas esperas ao telefone, filas em unidades de saúde e datas de consulta que não são convenientes. Como resultado, o projeto 'Saúde Ágil: Facilitando o Acesso a Consultas Médicas' visa desenvolver soluções para tornar o processo de agendamento mais rápido, eficiente e acessível, incluindo sistemas de agendamento online, redução do tempo de espera e melhoria da capacidade de atendimento nas unidades de saúde. O objetivo é garantir que todos tenham acesso oportuno e adequado aos cuidados médicos necessários.",
+        "conceitos": [
+          "Usuário no centro do design (User-Centered Design): Desenvolver a plataforma com base nas necessidades, comportamentos e feedback dos usuários, garantindo que todas as funcionalidades sejam práticas e úteis.",
+          "Acessibilidade: Garantir que o sistema seja acessível para todos os públicos-alvo, incluindo pessoas com baixa alfabetização digital, idosos e indivíduos com deficiência. Isso inclui uso de fontes legíveis, contrastes de cores adequados e compatibilidade com leitores de tela.",
+          "Simplicidade e Intuitividade: Criar uma interface limpa e simples, com um fluxo de navegação intuitivo que permita aos usuários agendar consultas com poucos cliques. Instruções claras e diretas devem guiar os usuários em cada etapa do processo.",
+          "Responsividade: Desenvolver uma plataforma que funcione perfeitamente em diversos dispositivos, incluindo smartphones, tablets e computadores, garantindo que os usuários possam acessar o sistema de qualquer lugar.",
+          "Segurança e Privacidade: Implementar robustas medidas de segurança para proteger os dados pessoais e médicos dos usuários, garantindo conformidade com as regulamentações de proteção de dados.",
+          "Feedback e Suporte: Incluir mecanismos para os usuários fornecerem feedback sobre a experiência de uso e disponibilizar suporte técnico facilmente acessível para resolver quaisquer problemas que possam surgir.",
+          "Integração com Sistemas Existentes: Assegurar que o novo sistema de agendamento possa ser integrado com os sistemas de gestão de saúde existentes nas unidades de saúde para facilitar a adoção e operação contínua.",
+          "Flexibilidade de Agendamento: Permitir que os usuários escolham horários de consulta que se encaixem em suas rotinas e ofereçam opções de reprogramação ou cancelamento sem dificuldades."
+        ],
+        "descricaoTeste": "Os resultados dos testes com usuários demonstraram uma melhoria significativa na experiência de agendamento de consultas médicas após a implementação das soluções propostas. Os testes piloto realizados em diversas unidades de saúde revelaram uma redução substancial no tempo de espera para agendar consultas, com muitos usuários conseguindo marcar suas consultas em poucos minutos através da plataforma online. Além disso, a acessibilidade da plataforma foi elogiada, especialmente por usuários idosos e com baixa alfabetização digital, que encontraram o sistema fácil de usar e entender. O feedback dos usuários também destacou a importância da flexibilidade de agendamento e da comunicação clara durante todo o processo. No geral, os resultados dos testes com usuários confirmaram a eficácia das soluções implementadas em melhorar o acesso e a experiência dos pacientes ao agendar consultas médicas.",
+        "conclusao": "O projeto 'Saúde Ágil: Facilitando o Acesso a Consultas Médicas' obteve resultados positivos e impactantes na melhoria do acesso e da experiência dos pacientes ao agendar consultas médicas. A implementação de soluções como o sistema de agendamento online, a redução do tempo de espera e o aumento da capacidade de atendimento nas unidades de saúde demonstraram ser eficazes em tornar o processo de agendamento mais rápido, eficiente e acessível para todos os públicos-alvo. Os testes com usuários confirmaram a relevância e a eficácia das melhorias implementadas, destacando a importância de colocar o usuário no centro do design e da inovação em saúde. No geral, o projeto teve um impacto significativo na qualidade de vida das pessoas, garantindo que todos tenham acesso oportuno e adequado aos cuidados médicos de que necessitam.",
+        "proximasEtapas": [
+          "Avaliação Contínua: Realizar uma avaliação contínua da plataforma de agendamento online e do processo de atendimento, coletando feedback dos usuários e identificando áreas para melhorias adicionais.",
+          "Expansão e Escala: Expandir a implementação das soluções desenvolvidas para mais unidades de saúde e comunidades, garantindo que um número maior de pessoas possa se beneficiar do acesso facilitado aos cuidados médicos.",
+          "Educação e Treinamento: Oferecer treinamento contínuo para profissionais de saúde e usuários sobre o uso da plataforma de agendamento online e sobre a importância do autocuidado e da prevenção de doenças.",
+          "Integração de Serviços: Explorar oportunidades de integração com outros serviços de saúde e bem-estar, como telemedicina, exames laboratoriais e programas de acompanhamento de saúde, para oferecer uma gama mais ampla de cuidados aos usuários.",
+          "Inovação Tecnológica: Continuar buscando inovações tecnológicas que possam aprimorar ainda mais a experiência dos usuários e a eficiência do sistema de saúde, como inteligência artificial para triagem de pacientes e análise de dados para previsão de demanda."
+        ],
+        "descricaoEtapas": "Essas etapas visam garantir que o projeto continue evoluindo e atendendo às necessidades em constante mudança dos usuários, promovendo um acesso mais equitativo e eficiente aos cuidados de saúde em toda a comunidade."
       }
     ]
   }

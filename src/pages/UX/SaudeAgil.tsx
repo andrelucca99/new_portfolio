@@ -1,27 +1,27 @@
-import styled from 'styled-components';
-
 import { Helmet } from 'react-helmet';
-import BannerUx from '../../components/Banner/BannerUx';
-import LogoSaudeAgil from './assets/logo-saudeAgil.svg';
 
-const SectionStyled = styled.section`
-  width: 100%;
-  height: 100vh;
+import Mockups from './assets/mockups3.png';
+import Personas from './assets/persona4.png';
+import Wireframes from './assets/wireframes3.png';
+import Logo from './assets/logo-saudeAgil.svg';
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: #fff;
-`;
+import LayoutUx from '../../components/layout/LayoutUx';
+import { saudeAgil } from './utils/EstudosUxDesign.json';
 
 function SaudeAgil() {
   return (
-    <SectionStyled>
+    <>
       <Helmet title="Portfolio - Saúde Ágil" />
-      <BannerUx icone={ LogoSaudeAgil } nome="Saúde Ágil" />
+      <LayoutUx
+        logo={ Logo }
+        nome="Saúde Ágil"
+        projeto={ saudeAgil }
+        personas1={ Personas }
+        mockups={ Mockups }
+        wireframes={ Wireframes }
+      />
 
-    </SectionStyled>
+    </>
   );
 }
 
