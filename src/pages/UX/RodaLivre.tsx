@@ -1,24 +1,28 @@
-import styled from 'styled-components';
-
 import { Helmet } from 'react-helmet';
-import LogoRodaLibre from './assets/logo-rodaLivre.svg';
-import BannerUx from '../../components/Banner/BannerUx';
 
-const SectionStyled = styled.section`
-  width: 100%;
+import Mockups from './assets/mockups2.png';
+import Personas3 from './assets/persona3.jpg';
+import Wireframes from './assets/wireframe2.png';
+import Logo from './assets/logo-rodaLivre.svg';
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+import LayoutUx from '../../components/layout/LayoutUx';
+import { rodaLivre } from './utils/EstudosUxDesign.json';
 
 function RodaLivre() {
   return (
-    <SectionStyled>
+    <>
       <Helmet title="Portfolio - Roda Livre" />
-      <BannerUx icone={ LogoRodaLibre } nome="Roda Livre" />
 
-    </SectionStyled>
+      <LayoutUx
+        logo={ Logo }
+        nome="Roda Livre"
+        projeto={ rodaLivre }
+        personas1={ Personas3 }
+        mockups={ Mockups }
+        wireframes={ Wireframes }
+      />
+
+    </>
   );
 }
 

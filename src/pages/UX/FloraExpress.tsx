@@ -7,7 +7,7 @@ import Wireframes from './assets/wireframes.png';
 import Logo from './assets/logo-floraExpress.svg';
 
 import LayoutUx from '../../components/layout/LayoutUx';
-import { floraExpress } from './utils/FloraExpress.json';
+import { floraExpress } from './utils/EstudosUxDesign.json';
 
 function FloraExpress() {
   return (

@@ -1,5 +1,7 @@
+/* eslint-disable react/jsx-closing-tag-location */
 /* eslint-disable react/jsx-max-depth */
 import styled from 'styled-components';
+
 import TextSubTitulo from '../Title';
 import BannerUx from '../Banner/BannerUx';
 
@@ -55,7 +57,7 @@ const PersonagensStyled = styled.div`
 
   & img {
     width: 50%;
-    border: 2px solid #000;
+    border: 2px solid #ccc;
     border-radius: 8px;
   }
 `;
@@ -102,135 +104,140 @@ type Props = {
   wireframes: string,
   mockups: string,
   personas1: string,
-  personas2?: string | undefined;
+  personas2?: string;
 };
 
 function LayoutUx(
+  // eslint-disable-next-line react/require-default-props
   { logo, nome, projeto, wireframes, mockups, personas1, personas2 } : Props,
 ) {
   return (
     <SectionStyled>
       <BannerUx icone={ logo } nome={ nome } />
-
-      <MainStyled>
-        <div>
-          <TextSubTitulo text="Objetivo do projeto" />
-
-          <p>{projeto && projeto.map((dado) => dado.objetivo) }</p>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Papel como designer do projeto" />
-          <PapelProjetoStyled>
-            <li>
-              Minhas Funções:
-              <ul>
-                {projeto && projeto.map(((dado) => dado.funcoes.map((item) => (
-                  <li key={ item }>{item}</li>
-                ))))}
-              </ul>
-            </li>
-            <li>
-              Responsabilidades:
-              <ul>
-                {projeto && projeto.map(((dado) => dado.responsabilidades.map((item) => (
-                  <li key={ item }>{item}</li>
-                ))))}
-              </ul>
-            </li>
-          </PapelProjetoStyled>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Público-alvo" />
-          <p>{ projeto && projeto.map((dado) => dado.publicoAlvo) }</p>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Principais desafios ou restrições" />
-          <ul>
-            {projeto && projeto.map(((dado) => dado.desafios.map((item) => (
-              <li key={ item }>{item}</li>
-            ))))}
-          </ul>
-          <ParagrafoStyled>
-            { projeto && projeto.map((dado) => dado.desafiosDescricao) }
-          </ParagrafoStyled>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Detalhes do estudo de pesquisa" />
-          <p>{ projeto && projeto.map((dado) => dado.detalhes) }</p>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Conceitos iniciais de design" />
-          <ul>
-            {projeto && projeto.map(((dado) => dado.conceitos.map((item) => (
-              <li key={ item }>{item}</li>
-            ))))}
-          </ul>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Personagens" />
-          <PersonagensStyled>
-            <img src={ personas1 } alt="Ilustração de um personagem" />
-            <img src={ personas2 } alt="Ilustração de um personagem" />
-          </PersonagensStyled>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Wireframes / Protótipos de alta fidelidade" />
-          <WireframeLayoutStyled>
-            <img src={ wireframes } alt="" />
-            <img src={ mockups } alt="" />
-          </WireframeLayoutStyled>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Resultados dos testes com usuários" />
-          <p>{ projeto && projeto.map((dado) => dado.descricaoTeste) }</p>
-        </div>
-
-        <LinhaStyled />
-
-        <div>
-          <TextSubTitulo text="Conclusão" />
-          <p>{ projeto && projeto.map((dado) => dado.conclusao) }</p>
+      { projeto ? (
+        <MainStyled>
+          <div>
+            <TextSubTitulo text="Objetivo do projeto" />
+            <p>{ projeto.map((dado) => dado.objetivo) }</p>
+          </div>
 
           <LinhaStyled />
 
-          <TextSubTitulo text="Próximas Etapas" />
+          <div>
+            <TextSubTitulo text="Papel como designer do projeto" />
+            <PapelProjetoStyled>
+              <li>
+                Minhas Funções:
+                <ul>
+                  { projeto.map(((dado) => dado.funcoes.map((item) => (
+                    <li key={ item }>{item}</li>
+                  )))) }
+                </ul>
+              </li>
+              <li>
+                Responsabilidades:
+                <ul>
+                  { projeto.map(((dado) => dado.responsabilidades.map((item) => (
+                    <li key={ item }>{item}</li>
+                  )))) }
+                </ul>
+              </li>
+            </PapelProjetoStyled>
+          </div>
 
-          <ul>
-            {projeto && projeto.map(((dado) => dado.proximasEtapas.map((item) => (
-              <li key={ item }>{item}</li>
-            ))))}
-          </ul>
-          <ParagrafoStyled>
-            { projeto && projeto.map((dado) => dado.descricaoEtapas) }
-          </ParagrafoStyled>
+          <LinhaStyled />
 
-        </div>
-      </MainStyled>
+          <div>
+            <TextSubTitulo text="Público-alvo" />
+            <p>{ projeto.map((dado) => dado.publicoAlvo) }</p>
+          </div>
 
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Principais desafios ou restrições" />
+            <ul>
+              { projeto.map(((dado) => dado.desafios.map((item) => (
+                <li key={ item }>{item}</li>
+              )))) }
+            </ul>
+            <ParagrafoStyled>
+              { projeto.map((dado) => dado.desafiosDescricao) }
+            </ParagrafoStyled>
+          </div>
+
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Detalhes do estudo de pesquisa" />
+            <p>{ projeto.map((dado) => dado.detalhes) }</p>
+          </div>
+
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Conceitos iniciais de design" />
+            <ul>
+              { projeto.map(((dado) => dado.conceitos.map((item) => (
+                <li key={ item }>{item}</li>
+              )))) }
+            </ul>
+          </div>
+
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Personagens" />
+            <PersonagensStyled>
+              <img src={ personas1 } alt="Ilustração de um personagem" />
+              {
+                personas2 ? (
+                  <img src={ personas2 } alt="Ilustração de um personagem" />
+                ) : (null)
+              }
+            </PersonagensStyled>
+          </div>
+
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Wireframes / Protótipos de alta fidelidade" />
+            <WireframeLayoutStyled>
+              <img src={ wireframes } alt="" />
+              <img src={ mockups } alt="" />
+            </WireframeLayoutStyled>
+          </div>
+
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Resultados dos testes com usuários" />
+            <p>{ projeto.map((dado) => dado.descricaoTeste) }</p>
+          </div>
+
+          <LinhaStyled />
+
+          <div>
+            <TextSubTitulo text="Conclusão" />
+            <p>{ projeto.map((dado) => dado.conclusao) }</p>
+
+            <LinhaStyled />
+
+            <TextSubTitulo text="Próximas Etapas" />
+
+            <ul>
+              { projeto.map(((dado) => dado.proximasEtapas.map((item) => (
+                <li key={ item }>{item}</li>
+              )))) }
+            </ul>
+            <ParagrafoStyled>
+              { projeto.map((dado) => dado.descricaoEtapas) }
+            </ParagrafoStyled>
+          </div>
+        </MainStyled>
+      ) : (
+        <p>Os dados não estão disponíveis.</p>
+      )}
     </SectionStyled>
   );
 }
