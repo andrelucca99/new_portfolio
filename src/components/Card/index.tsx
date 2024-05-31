@@ -1,10 +1,14 @@
-import styled from 'styled-components';
-
-import { Link } from 'react-router-dom';
 import Icones from '../Icones';
 import IconeOpen from './assets/open.png';
 import IconeGitHub from './assets/github.png';
-import { devices } from '../../Theme';
+
+import {
+  CardContainer,
+  CardImage,
+  CardContent,
+  CardContentDetails,
+  LinkImage,
+} from './Styles';
 
 interface CardProps {
   image: string,
@@ -15,77 +19,6 @@ interface CardProps {
 }
 
 function Card({ image, title, tech, repositorio, link }: CardProps) {
-  const CardContainer = styled.div`
-    width: 300px;
-    color: #fff;
-    border-radius: 12px;
-    background-color: #001634;
-    font-family: ${({ theme }) => theme.fonts.primary};
-    & h1 {
-      font-size: ${({ theme }) => theme.size.sm};
-      font-weight: ${({ theme }) => theme.weight.medium};
-    }
-
-    @media ${devices.desktop} {
-      width: 400px;
-    }
-  `;
-
-  const CardImage = styled.img`
-    width: 100%;
-    height: 100%;
-    border-radius: 10px 10px 0 0;
-    transition: all 0.2s ease-out;
-
-    &:hover {
-      opacity: 80%;
-    }
-
-    @media ${devices.laptop} {
-      height: 200px;
-    }
-
-    @media ${devices.desktop} {
-      height: 250px;
-    }
-  `;
-
-  const CardContent = styled.div`
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 10px 20px;
-
-    & h1 {
-      width: 100%;
-    }
-  `;
-
-  const CardContentDetails = styled.div`
-    width: 100%;
-
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1px;
-
-    & div > span {
-      font-size: ${({ theme }) => theme.size.xs};
-      font-weight: ${({ theme }) => theme.weight.regular};
-    }
-
-  `;
-
-  const LinkImage = styled(Link)`
-    & :hover{
-      transform: scale(0.9);
-      border-radius: 20px;
-      border: 2px solid #060231;
-    }
-  `;
-
   return (
     <CardContainer>
       <LinkImage to={ link } target="_blank">

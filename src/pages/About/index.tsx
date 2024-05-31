@@ -1,141 +1,25 @@
-import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
 import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
-import { devices } from '../../Theme';
 import Photo from '../../assets/images/foto.jpeg';
 import { cardAcademic, techSkills } from './utils/mock';
 
-const MainContainer = styled.main`
-  width: 80%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const HeaderContainer = styled.section`
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 55px 0;
-`;
-
-const Title = styled.h1`
-  font-size: ${({ theme }) => theme.size.xl};
-  font-weight: ${({ theme }) => theme.weight.medium};
-`;
-
-const SubTitle = styled.span`
-  font-size: ${({ theme }) => theme.size.sm};
-  font-weight: ${({ theme }) => theme.weight.regular};
-`;
-
-const AboutContent = styled.section`
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
-
-const SectionContent = styled.section`
-    width: 80%;
-    text-align: center;
-    font-weight: ${({ theme }) => theme.weight.regular};
-    margin-bottom: 20px;
-
-    @media ${devices.mobile} {
-      width: 100%;
-    }
-`;
-
-const Paragraph = styled.p`
-  text-align: left;
-  font-size: ${({ theme }) => theme.size.md};
-  font-family: ${({ theme }) => theme.fonts.segundary};
-  margin-bottom: 20px;
-`;
-
-const TechSkillsStyled = styled.section`
-  width: 100%;
-  margin: auto;
-  padding: 20px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  row-gap: 20px;
-`;
-
-const SectionAcademic = styled.section`
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: space-around;
-  margin: 50px 0;
-`;
-
-const AcademicCard = styled.section`
-  width: 500px;
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid #566B86;
-  background-color: #04244F;
-
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-
-  & img {
-    width: 80px;
-    height: 80px;
-    border-radius: 5px;
-  }
-
-  & section {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    @media ${devices.mobile} {
-      align-items: center;
-    }
-
-    @media ${devices.tablet} {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-
-  @media ${devices.mobile} {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media ${devices.tablet} {
-      flex-direction: row;
-    }
-`;
-
-const Row = styled.hr`
-  max-width: 100%;
-  margin: auto;
-  border: 1.5px solid ${({ theme }) => theme.bgFooter};
-`;
+import {
+  MainContainer,
+  HeaderContainer,
+  Title,
+  SubTitle,
+  AboutContent,
+  SectionContent,
+  Paragraph,
+  TechSkillsStyled,
+  SectionAcademic,
+  AcademicCard,
+  Row,
+} from './Styles';
 
 function About() {
   return (
