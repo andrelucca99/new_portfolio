@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import { IconesProps } from '../../utils/types';
-
 const ListIcones = styled.ul`
   display: flex;
   align-items: center;
@@ -17,6 +15,13 @@ const ListIcones = styled.ul`
     margin-top: -2px;
   }
 `;
+
+type IconesProps = {
+  icon1: string,
+  icon2: string,
+  link1: string,
+  link2: string,
+};
 
 function Icones({ icon1, icon2, link1, link2 }: IconesProps) {
   return (

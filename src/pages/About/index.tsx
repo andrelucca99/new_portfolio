@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { Helmet } from 'react-helmet';
 
-import Photo from './assets/foto.jpg';
 import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
-import { cardAcademic, techSkills } from './utils/mock';
+
 import { devices } from '../../Theme';
+import Photo from '../../assets/images/foto.jpeg';
+import { cardAcademic, techSkills } from './utils/mock';
 
 const MainContainer = styled.main`
   width: 80%;

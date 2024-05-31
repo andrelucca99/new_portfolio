@@ -9,14 +9,14 @@ import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
-import Photo from '../../assets/images/foto.jpg';
+import Photo from '../../assets/images/foto.jpeg';
 import RodaLivre from './assets/logo-rodaLivre.svg';
 import SaudeAgil from './assets/logo-saudeAgil.svg';
 import ImagePaper from '../../assets/images/paper.jpg';
 import FloraExpress from './assets/logo-floraExpress.svg';
 
 import { devices } from '../../Theme';
-import project from '../../utils/data/projectHome.json';
+import project from './utils/projectHome.json';
 
 const HomeStyled = styled.section`
   max-width: 80%;
