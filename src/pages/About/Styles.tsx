@@ -59,15 +59,24 @@ const Paragraph = styled.p`
 
 const TechSkillsStyled = styled.section`
   width: 100%;
-  margin: auto;
-  padding: 20px;
+  display: grid;
+  margin-bottom: 5%;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  row-gap: 20px;
+  @media ${devices.mobile} {
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+
+  @media ${devices.tablet} {
+    grid-template-columns: repeat(4, 2fr);
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+
+  @media ${devices.laptop} {
+    grid-template-columns: repeat(6, 2fr);
+  }
 `;
 
 const SectionAcademic = styled.section`
@@ -77,6 +86,10 @@ const SectionAcademic = styled.section`
   gap: 10px;
   justify-content: space-around;
   margin: 50px 0;
+
+  @media ${devices.laptop} {
+    justify-content: center;
+  }
 `;
 
 const AcademicCard = styled.section`

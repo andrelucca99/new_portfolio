@@ -14,7 +14,7 @@ const ProjectContent = styled.section`
 const ProjectsCards = styled.section`
   width: 100%;
 
-  background-color: ${({ theme }) => theme.bgFooter};
+  /* background-color: ${({ theme }) => theme.bgFooter}; */
   border-radius: 10px;
   border: 1px solid #5a4aee;
 

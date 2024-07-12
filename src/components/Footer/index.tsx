@@ -3,19 +3,27 @@ import Icones from '../Icones';
 
 import IconGitHub from '../../assets/icones/icon-github.svg';
 import IconLinkedin from '../../assets/icones/icon-linkedin.svg';
+import { devices } from '../../Theme';
 
 const FooterStyled = styled.footer`
-  width: 100%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 11px;
   padding: 20px 0;
 
-  background-color: ${({ theme }) => theme.bgFooter};
+  border-top: 1px solid ${({ theme }) => theme.textColor.segundary};
   position: relative;
   bottom: 0;
+
+  @media ${devices.mobile} {
+    flex-direction: column;
+  }
+
+  @media ${devices.tablet} {
+    flex-direction: row;
+  }
 `;
 
 const TextSpanStyled = styled.h2`

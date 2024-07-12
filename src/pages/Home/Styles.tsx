@@ -18,7 +18,6 @@ const HomeStyled = styled.section`
 
 const SectionPrincipal = styled.section`
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,16 +47,20 @@ const SectionBanner = styled.section`
 
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    
     justify-content: space-between;
     gap: 10px;
 
     @media ${devices.mobile} {
       width: 100%;
+      text-align: center;
+      align-items: center;
     }
 
     @media ${devices.laptop} {
       width: 50%;
+      text-align: left;
+      align-items: flex-start;
     }
   }
 
@@ -86,7 +89,7 @@ const SectionProjects = styled.section`
   }
 
   @media ${devices.tablet} {
-    width: 60%;
+    width: 80%;
     flex-flow: row wrap;
   }
 `;

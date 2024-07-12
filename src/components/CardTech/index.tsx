@@ -26,12 +26,12 @@ const CardContainer = styled.section`
   }
 `;
 
-type TestProps = {
+type CardTechProps = {
   image: string,
   title: string
 };
 
-function CardTech({ image, title }: TestProps) {
+function CardTech({ image, title }: CardTechProps) {
   return (
     <CardContainer>
       <img src={ image } alt="" />
