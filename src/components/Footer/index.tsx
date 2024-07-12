@@ -36,7 +36,7 @@ function Footer() {
       <Icones
         icon1={ IconLinkedin }
         icon2={ IconGitHub }
-        link1="https://www.linkedin.com/feed/"
+        link1="https://www.linkedin.com/in/andre-lucas20/"
         link2="https://github.com/andrelucca99"
       />
     </FooterStyled>

@@ -29,14 +29,14 @@ function Header() {
           <LinkNavMobile to="/">Home</LinkNavMobile>
           <LinkNavMobile to="/sobre">Sobre</LinkNavMobile>
           <LinkNavMobile to="/projetos">Projetos</LinkNavMobile>
-          <LinkNavMobile to="/blog">Blog</LinkNavMobile>
+          {/* <LinkNavMobile to="/blog">Blog</LinkNavMobile> */}
         </NavMobile>}
 
       <Nav>
         <LinkNav to="/">Home</LinkNav>
         <LinkNav to="/sobre">Sobre</LinkNav>
         <LinkNav to="/projetos">Projetos</LinkNav>
-        <LinkNav to="/blog">Blog</LinkNav>
+        {/* <LinkNav to="/blog">Blog</LinkNav> */}
         <Icones
           icon1={ IconLinkedin }
           icon2={ IconGitHub }
