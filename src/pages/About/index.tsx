@@ -38,18 +38,13 @@ function About() {
           <SectionContent>
             <TextSubTitulo text="Sobre Mim" />
             <Paragraph>
-              Olá, sou André Lucas, um entusiasta do desenvolvimento web em
-              busca contínua de soluções inovadoras para desafios do cotidiano,
-              visando impactar positivamente a vida das pessoas através
-              da acessibilidade e da tecnologia.
+              Olá, me chamo André Lucas, busco oportunidades que me permitam desenvolver minhas habilidades em um ambiente dinâmico e desafiador. Meu objetivo é contribuir para projetos inovadores, onde eu possa aplicar e aprimorar meus conhecimentos, enquanto trabalho em colaboração com equipes talentosas.
             </Paragraph>
             <Paragraph>
-              Tenho experiência sólida em diversas tecnologias, com foco
-              principal em Front-end: HTML5, CSS3, JavaScript, Angular,
-              React, RTL (React Testing Library), Jest, Redux, TypeScript
-              e Node.js. Além disso, possuo também conhecimento em Back-end:
-              bancos de dados SQL e NoSQL, Express, APIs REST, JWT, ORM,
-              POO, SOLID, Python e Docker.
+              Tenho experiência sólida em diversas tecnologias, com foco principal em Front-end: HTML5, CSS3, JavaScript, Angular, React, RTL (React Testing Library), Jest, Redux, TypeScript, Next.js, Design System, Sass, Styled Components, Tailwind CSS.
+            </Paragraph>
+            <Paragraph>
+              Além disso, possuo também conhecimentos em Back-end: bancos de dados SQL e NoSQL, Express, APIs REST, JWT, ORM, POO, SOLID, Python, Node.js, C#, ASP.NET, .NET Core, .NET Framework, .NET e Docker.
             </Paragraph>
             <Paragraph>
               Sou apaixonado por aprender e compartilhar conhecimento,

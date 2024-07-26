@@ -31,8 +31,8 @@ function Home() {
 
       <SectionBanner>
         <div>
-          <span>Seja bem-vindos ao meu portfólio</span>
-          <h2>Olá, eu sou André Lucas</h2>
+          <span>Olá, seja bem-vindo(a) ao meu portfólio</span>
+          <h2>Me chamo André Lucas</h2>
           <p>
             Como desenvolvedor, sou apaixonado por
             aprender e compartilhar conhecimento, sempre aberto a novas conexões.
