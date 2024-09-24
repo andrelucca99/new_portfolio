@@ -15,6 +15,7 @@ import mongodb from '../assets/mongodb.png';
 import python from '../assets/python.png';
 import sql from '../assets/sql.png';
 import testingLibrary from '../assets/testing-library.png';
+import c from '../assets/c.png';
 import trybe from '../assets/trybe.png';
 import uninove from '../assets/uninove.png';
 import _42_sp from '../assets/42sp.png';
@@ -63,6 +64,10 @@ export const techSkills: Array<ITechSkills> = [
     linguagem: 'Node.js',
   },
   {
+    image: c,
+    linguagem: 'C',
+  },
+  {
     image: c_sharp,
     linguagem: 'C#',
   },
@@ -104,7 +109,7 @@ export const cardAcademic: Array<ICardAcademic> = [
     id: 2,
     image: trybe,
     title: 'Trybe',
-    subTitle: 'Desenvolvimento Web, Gestão de Projetos de TI',
+    subTitle: 'Desenvolvimento Web',
     data: 'fev de 2022 - mar de 2023',
   },
   {

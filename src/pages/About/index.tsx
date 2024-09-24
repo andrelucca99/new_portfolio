@@ -29,7 +29,7 @@ function About() {
           <PhotoPerfil text="Foto de perfil do André" />
           <Title>André Lucas</Title>
           <SubTitle>
-            Desenvolvedor Full Stack
+            Software Developer
             <Row />
           </SubTitle>
         </HeaderContainer>
