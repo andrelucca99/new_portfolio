@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "imagem": "https://github.com/andrelucca99/angular-blog/raw/master/src/assets/view.gif",
-    "title": "The Blog",
-    "tech": ["Angular / ", "TypeScript"],
-    "repositorio": "https://github.com/andrelucca99/angular-blog",
-    "link": "https://angular-blog-umber.vercel.app/"
+    "imagem": "https://github.com/andrelucca99/HP-Book-1/raw/main/src/assets/print.png",
+    "title": "Harry Potter e a Pedra Filosofal",
+    "tech": ["React / ", "TypeScript"],
+    "repositorio": "https://github.com/andrelucca99/HP-Book-1",
+    "link": "https://hp-book-1-6w36.vercel.app/"
   },
   {
     "id": 2,

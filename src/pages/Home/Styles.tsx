@@ -91,6 +91,11 @@ const SectionProjects = styled.section`
   @media ${devices.tablet} {
     flex-flow: row wrap;
   }
+
+  @media ${devices.laptop} {
+    flex-flow: row wrap;
+    width: 80%;
+  }
 `;
 
 const CardsProjects = styled.section`
@@ -123,6 +128,10 @@ const SectionArticles = styled.article`
 
   @media ${devices.tablet} {
     width: 100%;
+  }
+
+  @media ${devices.laptop} {
+    width: 40%;
   }
 
   & div {
