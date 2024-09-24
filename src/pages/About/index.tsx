@@ -4,7 +4,6 @@ import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
-import Photo from '../../assets/images/foto.jpeg';
 import { cardAcademic, techSkills } from './utils/mock';
 
 import {
@@ -27,7 +26,7 @@ function About() {
       <Helmet title="Portfolio - Sobre" />
       <MainContainer>
         <HeaderContainer>
-          <PhotoPerfil image={ Photo } text="Foto de perfil do André" />
+          <PhotoPerfil text="Foto de perfil do André" />
           <Title>André Lucas</Title>
           <SubTitle>
             Desenvolvedor Full Stack

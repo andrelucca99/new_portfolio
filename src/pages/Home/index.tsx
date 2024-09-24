@@ -5,7 +5,6 @@ import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
-import Photo from '../../assets/images/foto.jpeg';
 import RodaLivre from './assets/logo-rodaLivre.svg';
 import SaudeAgil from './assets/logo-saudeAgil.svg';
 import ImagePaper from '../../assets/images/paper.jpg';
@@ -39,7 +38,7 @@ function Home() {
           </p>
           <Button text="Saiba mais" url="/sobre" />
         </div>
-        <PhotoPerfil image={ Photo } text="Foto de perfil do André" />
+        <PhotoPerfil text="Foto de perfil do André" />
       </SectionBanner>
 
       <SectionPrincipal>

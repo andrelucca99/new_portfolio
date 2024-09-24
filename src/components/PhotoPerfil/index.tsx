@@ -9,9 +9,9 @@ const PerfilPhoto = styled.img`
   margin-bottom: 20px;
 `;
 
-function PhotoPerfil({ image, text } : { image: string, text: string }) {
+function PhotoPerfil({ text } : { text: string }) {
   return (
-    <PerfilPhoto src={ image } alt={ text } />
+    <PerfilPhoto src="https://avatars.githubusercontent.com/u/66281231?v=4" alt={ text } />
   );
 }
 
