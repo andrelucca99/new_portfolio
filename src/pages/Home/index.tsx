@@ -21,6 +21,7 @@ import {
   SectionUx,
   LayoutGridUx,
   LinkUx,
+  CardsProjects,
 } from './Styles';
 
 function Home() {
@@ -44,7 +45,7 @@ function Home() {
       <SectionPrincipal>
         <SectionProjects>
           <TextSubTitulo text="Projetos" />
-          <div>
+          <CardsProjects>
             {project
             && project.map((item) => (
               <Card
@@ -56,7 +57,7 @@ function Home() {
                 link={ item.link }
               />
             ))}
-          </div>
+          </CardsProjects>
           <Button text="Mais Projetos" url="/projetos" />
         </SectionProjects>
         <SectionArticles>

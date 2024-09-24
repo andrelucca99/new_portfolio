@@ -23,7 +23,7 @@ const SectionPrincipal = styled.section`
   align-items: center;
   gap: 5px;
 
-  @media ${devices.tablet} {
+  @media ${devices.laptop} {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -89,8 +89,27 @@ const SectionProjects = styled.section`
   }
 
   @media ${devices.tablet} {
-    width: 80%;
     flex-flow: row wrap;
+  }
+`;
+
+const CardsProjects = styled.section`
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 5%;
+
+  @media ${devices.mobile} {
+    grid-template-columns: repeat(1, 2fr);
+    row-gap: 10px;
+    column-gap: 5px;
+  }
+
+  @media ${devices.tablet} {
+    grid-template-columns: repeat(2, 2fr);
+    row-gap: 20px;
+    column-gap: 10px;
   }
 `;
 
@@ -103,7 +122,7 @@ const SectionArticles = styled.article`
   gap: 10px;
 
   @media ${devices.tablet} {
-    width: 20%;
+    width: 100%;
   }
 
   & div {
@@ -118,6 +137,14 @@ const SectionArticles = styled.article`
     gap: 10px;
 
     padding: 5px;
+
+    @media ${devices.tablet} {
+      width: 500px;
+    }
+
+    @media ${devices.laptop} {
+      width: 212px;
+    }
   }
 `;
 
@@ -204,4 +231,5 @@ export {
   SectionUx,
   LayoutGridUx,
   LinkUx,
+  CardsProjects,
 };
