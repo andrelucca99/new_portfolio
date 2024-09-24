@@ -78,5 +78,13 @@
     "tech": ["React / ", "TypeScript"],
     "repositorio": "https://github.com/andrelucca99/HP-Book-1",
     "link": "https://hp-book-1-6w36.vercel.app/"
+  },
+  {
+    "id": 11,
+    "imagem": "https://github.com/andrelucca99/tamagotchi_em_csharp/raw/main/assets/video.gif",
+    "title": "Tamagotchi Pokémon",
+    "tech": ["C# /", " API do Pokémon"],
+    "repositorio": "https://github.com/andrelucca99/tamagotchi_em_csharp",
+    "link": "https://github.com/andrelucca99/tamagotchi_em_csharp"
   }
 ]

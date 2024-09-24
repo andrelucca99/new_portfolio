@@ -17,11 +17,11 @@
   },
   {
     "id": 3,
-    "imagem": "https://github.com/andrelucca99/star-wars-planets/raw/main/banner.gif",
-    "title": "Star Wars Planets Search",
-    "tech": ["React / ", "JavaScript"],
-    "repositorio": "https://github.com/andrelucca99/star-wars-planets",
-    "link": "https://star-wars-planets-three.vercel.app/"
+    "imagem": "https://github.com/andrelucca99/tamagotchi_em_csharp/raw/main/assets/video.gif",
+    "title": "Tamagotchi Pokémon",
+    "tech": ["C# /", " API do Pokémon"],
+    "repositorio": "https://github.com/andrelucca99/tamagotchi_em_csharp",
+    "link": "https://github.com/andrelucca99/tamagotchi_em_csharp"
   },
   {
     "id": 4,
