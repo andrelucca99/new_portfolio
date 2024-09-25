@@ -71,6 +71,8 @@ const SectionBanner = styled.section`
 
   @media ${devices.laptop} {
     flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
   }
 `;
 
