@@ -8,6 +8,7 @@ import {
   CardContent,
   CardContentDetails,
   LinkImage,
+  Row,
 } from './Styles';
 
 interface CardProps {
@@ -25,7 +26,10 @@ function Card({ image, title, tech, repositorio, link }: CardProps) {
         <CardImage src={ image } alt="" />
       </LinkImage>
       <CardContent>
-        <h1>{ title }</h1>
+        <h1>
+          { title }
+          <Row />
+        </h1>
         <CardContentDetails>
           <div>
             <span>{ tech }</span>

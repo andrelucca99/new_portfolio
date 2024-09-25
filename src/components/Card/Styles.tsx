@@ -19,8 +19,8 @@ const CardContainer = styled.div`
 `;
 
 const CardImage = styled.img`
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 200px;
   border-radius: 10px 10px 0 0;
   transition: all 0.2s ease-out;
 
@@ -73,10 +73,17 @@ const LinkImage = styled(Link)`
   }
 `;
 
+const Row = styled.hr`
+  width: 100%;
+  border: 1px solid ${({ theme }) => theme.textColor.segundary};
+  margin-bottom: 5px;
+`;
+
 export {
   CardContainer,
   CardImage,
   CardContent,
   CardContentDetails,
   LinkImage,
+  Row,
 };

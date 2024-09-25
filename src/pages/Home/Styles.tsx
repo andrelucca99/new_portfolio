@@ -90,6 +90,10 @@ const SectionProjects = styled.section`
     gap: 10px;
   }
 
+  @media ${devices.mobile} {
+    align-items: center;
+  }
+
   @media ${devices.tablet} {
     flex-flow: row wrap;
   }
