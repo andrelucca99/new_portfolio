@@ -5,7 +5,7 @@ import { devices } from '../../Theme';
 const HeaderStyled = styled.header`
   width: 100%;
   max-width: 1140px;
-  height: 64px;
+  height: 100%;
   margin-top: 20px;
 
   display: flex;
@@ -14,7 +14,7 @@ const HeaderStyled = styled.header`
   @media ${devices.mobile} {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 250px;
+    margin-bottom: 20px;
   }
 
   @media ${devices.tablet} {
@@ -67,6 +67,7 @@ const NavMobile = styled.nav`
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
+  margin-top: 20px;
 
   @media ${devices.tablet} {
     display: none;
