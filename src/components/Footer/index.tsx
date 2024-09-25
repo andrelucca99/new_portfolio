@@ -40,7 +40,7 @@ const TextSpanStyled = styled.h2`
 function Footer() {
   return (
     <FooterStyled>
-      <TextSpanStyled>Desenvolvido por André Lucas</TextSpanStyled>
+      <TextSpanStyled>&copy; 2024 - Desenvolvido por André Lucas</TextSpanStyled>
       <Icones
         icon1={ IconLinkedin }
         icon2={ IconGitHub }
