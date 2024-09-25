@@ -77,7 +77,7 @@ export const techSkills: Array<ITechSkills> = [
   },
   {
     image: mongodb,
-    linguagem: 'Mondo DB',
+    linguagem: 'MongoDB',
   },
 ];
 
