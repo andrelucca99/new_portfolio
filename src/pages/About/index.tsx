@@ -3,21 +3,13 @@ import { Helmet } from 'react-helmet';
 import CardTech from '../../components/CardTech';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
+import AcademicCard from '../../components/AcademicCard';
 
 import { cardAcademic, techSkills } from './utils/mock';
 
 import {
-  MainContainer,
-  HeaderContainer,
-  Title,
-  SubTitle,
-  AboutContent,
-  SectionContent,
-  Paragraph,
-  TechSkillsStyled,
-  SectionAcademic,
-  AcademicCard,
-  Row,
+  MainContainer, HeaderContainer, Title, SubTitle, AboutContent,
+  SectionContent, Paragraph, TechSkillsStyled, SectionAcademic, Row,
 } from './Styles';
 
 function About() {
@@ -56,17 +48,15 @@ function About() {
 
             <SectionAcademic>
               {
-                cardAcademic && cardAcademic.map((item) => (
-                  <AcademicCard key={ item.id }>
-                    <img src={ item.image } alt="Foto da instituição" />
-                    <section>
-                      <h3>{item.title}</h3>
-                      <span>
-                        {item.subTitle}
-                      </span>
-                      <span>{item.data}</span>
-                    </section>
-                  </AcademicCard>
+                cardAcademic
+                && cardAcademic.map(({ id, image, title, subTitle, data }) => (
+                  <AcademicCard
+                    key={ id }
+                    image={ image }
+                    title={ title }
+                    subTitle={ subTitle }
+                    data={ data }
+                  />
                 ))
               }
             </SectionAcademic>

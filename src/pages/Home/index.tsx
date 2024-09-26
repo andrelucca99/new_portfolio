@@ -13,15 +13,8 @@ import FloraExpress from './assets/logo-floraExpress.svg';
 import project from './utils/projectHome.json';
 
 import {
-  HomeStyled,
-  SectionPrincipal,
-  SectionBanner,
-  SectionProjects,
-  SectionArticles,
-  SectionUx,
-  LayoutGridUx,
-  LinkUx,
-  CardsProjects,
+  HomeStyled, SectionPrincipal, SectionBanner, SectionProjects,
+  SectionArticles, SectionUx, LayoutGridUx, LinkUx, CardsProjects,
 } from './Styles';
 
 function Home() {

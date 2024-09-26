@@ -10,3 +10,10 @@ export interface ICardAcademic {
   subTitle: string,
   data: string,
 }
+
+export interface IAcademicCard {
+  image: string;
+  title: string;
+  subTitle: string;
+  data: string;
+}
