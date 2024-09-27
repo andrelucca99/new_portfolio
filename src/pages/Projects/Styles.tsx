@@ -29,6 +29,7 @@ const ProjectsCards = styled.section`
     row-gap: 10px;
     column-gap: 5px;
     margin: 20px;
+    padding: 10px 0px;
   }
 
   @media ${devices.tablet} {
