@@ -21,6 +21,7 @@ const CardContainer = styled.div`
 const CardImage = styled.img`
   width: 300px;
   height: 200px;
+  object-fit: fill;
   border-radius: 10px 10px 0 0;
   transition: all 0.2s ease-out;
 
