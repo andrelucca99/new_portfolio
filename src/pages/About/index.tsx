@@ -67,11 +67,11 @@ function About() {
             <TextSubTitulo text="Tecnologias" />
             <TechSkillsStyled>
               {techSkills
-              && techSkills.map((item) => (
+              && techSkills.map(({ linguagem, image }) => (
                 <CardTech
-                  key={ item.linguagem }
-                  image={ item.image }
-                  title={ item.linguagem }
+                  key={ linguagem }
+                  image={ image }
+                  title={ linguagem }
                 />
               ))}
             </TechSkillsStyled>

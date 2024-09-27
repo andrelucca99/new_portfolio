@@ -12,14 +12,14 @@ function Projects() {
 
       <ProjectsCards>
         {project
-            && project.map((item) => (
+            && project.map(({ id, imagem, title, tech, repositorio, link }) => (
               <Card
-                key={ item.id }
-                image={ item.imagem }
-                title={ item.title }
-                tech={ item.tech }
-                repositorio={ item.repositorio }
-                link={ item.link }
+                key={ id }
+                image={ imagem }
+                title={ title }
+                tech={ tech }
+                repositorio={ repositorio }
+                link={ link }
               />
             ))}
       </ProjectsCards>
