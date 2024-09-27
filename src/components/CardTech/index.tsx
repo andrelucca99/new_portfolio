@@ -34,7 +34,7 @@ type CardTechProps = {
 function CardTech({ image, title }: CardTechProps) {
   return (
     <CardContainer>
-      <img src={ image } alt="" />
+      <img src={ image } alt={ title } />
       <span>{ title }</span>
     </CardContainer>
   );

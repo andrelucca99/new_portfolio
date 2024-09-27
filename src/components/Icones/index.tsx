@@ -27,13 +27,13 @@ function Icones({ icon1, icon2, link1, link2 }: IconesProps) {
   return (
     <ListIcones>
       <li>
-        <Link to={ link1 } target="_blank">
-          <img src={ icon1 } alt="Imagem do ícone 1" />
+        <Link to={ link1 } aria-label="Ícone" target="_blank">
+          <img src={ icon1 } alt="Ícone" />
         </Link>
       </li>
       <li>
-        <Link to={ link2 } target="_blank">
-          <img src={ icon2 } alt="Imagem do ícone 1" />
+        <Link to={ link2 } aria-label="Ícone" target="_blank">
+          <img src={ icon2 } alt="Ícone" />
         </Link>
       </li>
     </ListIcones>

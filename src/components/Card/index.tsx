@@ -22,8 +22,8 @@ interface CardProps {
 function Card({ image, title, tech, repositorio, link }: CardProps) {
   return (
     <CardContainer>
-      <LinkImage to={ link } target="_blank">
-        <CardImage src={ image } alt="" />
+      <LinkImage to={ link } aria-label={ title } target="_blank">
+        <CardImage src={ image } alt={ title } />
       </LinkImage>
       <CardContent>
         <h1>

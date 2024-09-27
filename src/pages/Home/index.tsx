@@ -68,22 +68,22 @@ function Home() {
       <SectionUx>
         <TextSubTitulo text="Projetos UX Design" />
         <LayoutGridUx>
-          <LinkUx to="/ux/flora-express">
+          <LinkUx to="/ux/flora-express" aria-label="Flora Express">
             <div className="card-left">
               <img src={ FloraExpress } alt="Logo do projeto Flora Express" />
               <h3>Flora Express</h3>
             </div>
           </LinkUx>
           <div className="card-right">
-            <LinkUx to="/ux/roda-livre">
+            <LinkUx to="/ux/roda-livre" aria-label="Roda Livre">
               <div className="roda-livre">
-                <img src={ RodaLivre } alt="Logo do projeto Flora Express" />
+                <img src={ RodaLivre } alt="Logo do projeto Roda Livre" />
                 <h3>Roda Livre</h3>
               </div>
             </LinkUx>
-            <LinkUx to="/ux/saude-agil">
+            <LinkUx to="/ux/saude-agil" aria-label="Saúde Ágil">
               <div className="saude-agil">
-                <img src={ SaudeAgil } alt="Logo do projeto Flora Express" />
+                <img src={ SaudeAgil } alt="Logo do projeto Saúde Ágil" />
                 <h3>Saúde Ágil</h3>
               </div>
             </LinkUx>

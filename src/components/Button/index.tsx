@@ -27,7 +27,7 @@ type ButtonProps = {
 
 function Button({ text, url }: ButtonProps) {
   return (
-    <LinkProjects to={ url }>
+    <LinkProjects to={ url } aria-label={ text }>
       { text }
     </LinkProjects>
   );

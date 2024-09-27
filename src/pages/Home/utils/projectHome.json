@@ -19,7 +19,7 @@
     "id": 3,
     "imagem": "https://github.com/andrelucca99/tamagotchi_em_csharp/raw/main/assets/video.gif",
     "title": "Tamagotchi Pokémon",
-    "tech": ["C# /", " API do Pokémon"],
+    "tech": ["C# /", " PokéAPI"],
     "repositorio": "https://github.com/andrelucca99/tamagotchi_em_csharp",
     "link": "https://github.com/andrelucca99/tamagotchi_em_csharp"
   },
