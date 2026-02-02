@@ -15,5 +15,5 @@ export interface IAcademicCard {
   image: string;
   title: string;
   subTitle: string;
-  data: string;
+  data?: string;
 }

@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const LinkProjects = styled(Link)`
   text-decoration: none;
   list-style: none;
-  background-color: transparent;
+  background-color: #021a3a;
   transition: all 0.2s ease-out;
   padding: 5px 20px;
   color: ${({ theme }) => theme.textColor.primary};
@@ -27,8 +27,8 @@ type ButtonProps = {
 
 function Button({ text, url }: ButtonProps) {
   return (
-    <LinkProjects to={ url } aria-label={ text }>
-      { text }
+    <LinkProjects to={url} aria-label={text}>
+      {text}
     </LinkProjects>
   );
 }

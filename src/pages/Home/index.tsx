@@ -5,17 +5,15 @@ import Button from '../../components/Button';
 import TextSubTitulo from '../../components/Title';
 import PhotoPerfil from '../../components/PhotoPerfil';
 
-import RodaLivre from './assets/logo-rodaLivre.svg';
-import SaudeAgil from './assets/logo-saudeAgil.svg';
-import ImagePaper from '../../assets/images/paper.jpg';
-import FloraExpress from './assets/logo-floraExpress.svg';
-
 import project from './utils/projectHome.json';
 
 import {
   HomeStyled, SectionPrincipal, SectionBanner, SectionProjects,
-  SectionArticles, SectionUx, LayoutGridUx, LinkUx, CardsProjects,
+  SectionArticles, CardsProjects,
 } from './Styles';
+import { SectionAcademic } from '../About/Styles';
+import { cardAcademic } from '../About/utils/mock';
+import AcademicCard from '../../components/AcademicCard';
 
 function Home() {
   return (
@@ -37,59 +35,65 @@ function Home() {
 
       <SectionPrincipal>
         <SectionProjects>
-          <TextSubTitulo text="Projetos" />
+          <TextSubTitulo text="Meus Projetos" />
           <CardsProjects>
             {project
-            && project.map(({ id, imagem, title, tech, repositorio, link }) => (
-              <Card
-                key={ id }
-                image={ imagem }
-                title={ title }
-                tech={ tech }
-                repositorio={ repositorio }
-                link={ link }
-              />
-            ))}
+              && project.map(({ id, imagem, title, tech, repositorio, link }) => (
+                <Card
+                  key={id}
+                  image={imagem}
+                  title={title}
+                  tech={tech}
+                  repositorio={repositorio}
+                  link={link}
+                />
+              ))}
           </CardsProjects>
           <Button text="Mais Projetos" url="/projetos" />
         </SectionProjects>
         <SectionArticles>
-          <TextSubTitulo text="Artigos" />
-          <div>
-            <p>Em Breve</p>
-            <img src={ ImagePaper } alt="" />
-            <img src={ ImagePaper } alt="" />
-            <img src={ ImagePaper } alt="" />
-          </div>
-          {/* <Button text="Veja Mais" url="/blog" /> */}
+          <TextSubTitulo text="Formação Acadêmica" />
+          <SectionAcademic>
+            {
+              cardAcademic
+              && cardAcademic.map(({ id, image, title, subTitle }) => (
+                <AcademicCard
+                  key={id}
+                  image={image}
+                  title={title}
+                  subTitle={subTitle}
+                />
+              ))
+            }
+          </SectionAcademic>
         </SectionArticles>
       </SectionPrincipal>
 
-      <SectionUx>
+      {/* <SectionUx>
         <TextSubTitulo text="Projetos UX Design" />
         <LayoutGridUx>
           <LinkUx to="/ux/flora-express" aria-label="Flora Express">
             <div className="card-left">
-              <img src={ FloraExpress } alt="Logo do projeto Flora Express" />
+              <img src={FloraExpress} alt="Logo do projeto Flora Express" />
               <h3>Flora Express</h3>
             </div>
           </LinkUx>
           <div className="card-right">
             <LinkUx to="/ux/roda-livre" aria-label="Roda Livre">
               <div className="roda-livre">
-                <img src={ RodaLivre } alt="Logo do projeto Roda Livre" />
+                <img src={RodaLivre} alt="Logo do projeto Roda Livre" />
                 <h3>Roda Livre</h3>
               </div>
             </LinkUx>
             <LinkUx to="/ux/saude-agil" aria-label="Saúde Ágil">
               <div className="saude-agil">
-                <img src={ SaudeAgil } alt="Logo do projeto Saúde Ágil" />
+                <img src={SaudeAgil} alt="Logo do projeto Saúde Ágil" />
                 <h3>Saúde Ágil</h3>
               </div>
             </LinkUx>
           </div>
         </LayoutGridUx>
-      </SectionUx>
+      </SectionUx> */}
     </HomeStyled>
   );
 }

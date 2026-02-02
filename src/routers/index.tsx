@@ -1,10 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 
 import Layout from '../components/layout';
-import {
-  NotFound, Home, About, Projects,
-  FloraExpress, RodaLivre, SaudeAgil,
-} from '../pages';
+import { NotFound, Home, About, Projects } from '../pages';
 
 export const router = createBrowserRouter([
   {
@@ -24,23 +21,23 @@ export const router = createBrowserRouter([
         path: 'projetos',
         element: <Projects />,
       },
-      {
-        path: 'ux',
-        children: [
-          {
-            path: 'flora-express',
-            element: <FloraExpress />,
-          },
-          {
-            path: 'roda-livre',
-            element: <RodaLivre />,
-          },
-          {
-            path: 'saude-agil',
-            element: <SaudeAgil />,
-          },
-        ],
-      },
+      // {
+      //   path: 'ux',
+      //   children: [
+      //     {
+      //       path: 'flora-express',
+      //       element: <FloraExpress />,
+      //     },
+      //     {
+      //       path: 'roda-livre',
+      //       element: <RodaLivre />,
+      //     },
+      //     {
+      //       path: 'saude-agil',
+      //       element: <SaudeAgil />,
+      //     },
+      //   ],
+      // },
     ],
   },
 ]);

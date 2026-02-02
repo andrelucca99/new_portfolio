@@ -28,6 +28,7 @@ const SectionPrincipal = styled.section`
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 20px;
+    gap: 20px
   }
 `;
 
@@ -81,6 +82,10 @@ const SectionProjects = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #566B86;
+  background-color: #04244F;
 
   & div {
     display: flex;
@@ -100,7 +105,7 @@ const SectionProjects = styled.section`
 
   @media ${devices.laptop} {
     flex-flow: row wrap;
-    width: 80%;
+    max-width: 80%;
   }
 `;
 
@@ -131,13 +136,17 @@ const SectionArticles = styled.article`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #566B86;
+  background-color: #04244F;
 
   @media ${devices.tablet} {
     width: 100%;
   }
 
   @media ${devices.laptop} {
-    width: 40%;
+    width: 35%;
   }
 
   & div {

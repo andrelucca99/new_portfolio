@@ -17,11 +17,11 @@
   },
   {
     "id": 3,
-    "imagem": "https://github.com/andrelucca99/tamagotchi_em_csharp/raw/main/assets/video.gif",
-    "title": "Tamagotchi Pokémon",
-    "tech": ["C# /", " PokéAPI"],
-    "repositorio": "https://github.com/andrelucca99/tamagotchi_em_csharp",
-    "link": "https://github.com/andrelucca99/tamagotchi_em_csharp"
+    "imagem": "https://github.com/andrelucca99/game-boy/blob/master/img/3.webp?raw=true",
+    "title": "GameBoy Color",
+    "tech": ["Html / Css /", "JavaScript"],
+    "repositorio": "https://github.com/andrelucca99/game-boy",
+    "link": "https://game-boy-alpha.vercel.app/"
   },
   {
     "id": 4,

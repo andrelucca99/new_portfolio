@@ -86,5 +86,13 @@
     "tech": ["C# /", " PokéAPI"],
     "repositorio": "https://github.com/andrelucca99/tamagotchi_em_csharp",
     "link": "https://github.com/andrelucca99/tamagotchi_em_csharp"
+  },
+  {
+    "id": 12,
+    "imagem": "https://github.com/andrelucca99/game-boy/blob/master/img/3.webp?raw=true",
+    "title": "GameBoy Color",
+    "tech": ["Html / Css /", "JavaScript"],
+    "repositorio": "https://github.com/andrelucca99/game-boy",
+    "link": "https://game-boy-alpha.vercel.app/"
   }
 ]

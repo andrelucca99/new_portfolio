@@ -37,13 +37,20 @@ const TextSpanStyled = styled.h2`
   letter-spacing: 2px;
 `;
 
+const anoAtual = new Date().getFullYear();
+
 function Footer() {
   return (
     <FooterStyled>
-      <TextSpanStyled>&copy; 2024 - Desenvolvido por André Lucas</TextSpanStyled>
+      <TextSpanStyled>
+        &copy;
+        {anoAtual}
+        {' '}
+        - Desenvolvido por André Lucas
+      </TextSpanStyled>
       <Icones
-        icon1={ IconLinkedin }
-        icon2={ IconGitHub }
+        icon1={IconLinkedin}
+        icon2={IconGitHub}
         link1="https://www.linkedin.com/in/andre-lucas20/"
         link2="https://github.com/andrelucca99"
       />
